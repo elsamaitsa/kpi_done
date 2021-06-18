@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <title>Invoice PDF</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        font-weight: 500;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table tr td {
+        vertical-align: top;
+    }
+
+    .container {
+        margin: 10px 30px;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .container-table {
+        padding: 10px 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    table tr {
+        line-height: 40px;
+    }
+
+    .table-border {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table-border tr th {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .table-border tr td {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ft14 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2px;
+        margin-bottom: 3px;
+    }
+
+    .mt-1 {
+        margin-top: 5px;
+    }
+
+    .mt-2 {
+        margin-top: 10px;
+    }
+
+    .mt-3 {
+        margin-top: 15px;
+    }
+
+    /* #invoice{
+        display: none;
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div id="invoice">
+            <div style="display: flex;">
+                <img src="assets/images/logo-perhutani.png" style="width:10%; height:10%;">
+                <img src="assets/images/qrcode.png" style="width:9%; margin-left:auto;">
+            </div>
+            <h4 class="text-center title">CONFIRMATION OF SALES (COS)</h4>
+            <table class="ft14 mt-2">
+                <tr>
+                    <td width="30%">Agent</td>
+                    <td>:</td>
+                    <td>Miatronika Karya Niaga</td>
+                </tr>
+                <tr>
+                    <td>Buyer</td>
+                    <td>:</td>
+                    <td>To Be Advice and Will Be Stated in The Invoice</td>
+                </tr>
+                <tr>
+                    <td>Commodity</td>
+                    <td>:</td>
+                    <td>Gumrosin</td>
+                </tr>
+                <tr>
+                    <td>Quality/td>
+                    <td>:</td>
+                    <td>Gumrosin WW & Gumrosin X (SNI, 07636-2011)</td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td>:</td>
+                    <td>Total Gumrosin allocation for this month is 211.2 Mton (11.00 Fcl) with detail as follows :</td>
+                </tr>
+            </table>
+            <table class="ft14 mt-1">
+                <tr>
+                    <td style="width:40%">WH KBM IHH Tandes</td>
+                    <td>:</td>
+                    <td>Gumrosin X</td>
+                    <td>:</td>
+                    <td>38.4 MTon ( 2.00 ) FCL</td>
+                </tr>
+                <tr>
+                    <td>WH KBM IHH Tandes</td>
+                    <td>:</td>
+                    <td>Gumrosin WW</td>
+                    <td>:</td>
+                    <td>38.4 MTon ( 2.00 ) FCL</td>
+                </tr>
+                <tr>
+                    <td>WH PGT Sindangwangi</td>
+                    <td>:</td>
+                    <td>Gumrosin WW</td>
+                    <td>:</td>
+                    <td>38.4 MTon ( 2.00 ) FCL</td>
+                </tr>
+                <tr>
+                    <td>WH KBM IHH Mranggen</td>
+                    <td>:</td>
+                    <td>Gumrosin WW</td>
+                    <td>:</td>
+                    <td>38.4 MTon ( 2.00 ) FCL</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: 1px solid #4f4f4f;">Total</td>
+                    <td style="border-top: 1px solid #4f4f4f;">38.4 MTon ( 2.00 ) FCL</td>
+                </tr>
+            </table>
+
+            <table class="ft14 mt-2">
+                <tr>
+                    <td style="width:30%">Pricing Policy</td>
+                    <td>:</td>
+                    <td>1. Manufacturing Price based on letter 0013/074.1/PBP/2021 Harga Jual Hasil Industri Non Kayu
+                        Bulan Januari 2021 Untuk Penjualan Luar Negeri</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table class="table-border ft14">
+                            <tr>
+                                <th class="text-center" rowspan="2">Grade</th>
+                                <th class="text-center" rowspan="2">FOB Price (USD/MTon)</th>
+                                <th class="text-center" colspan="5">CIF Price (USD/MTon)</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">China</td>
+                                <td class="text-center">Europe</td>
+                                <td class="text-center">South Asia</td>
+                                <td class="text-center">East Asia</td>
+                                <td class="text-center">Southeast Asia</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Gumrosin X</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Gumrosin WG</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Delta Carene</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Gumrosin WW</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Alphapinene</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Gumrosin XB</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Turpentine Oil</td>
+                                <td>1,150</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:30%"></td>
+                    <td>:</td>
+                    <td>
+                        <h6 class="ft14">2. Perhutani will give 1% penalty if Agent unable to comply COS issued in a
+                            monthly basis</h6>
+                        <h6 class="ft14">3. Perhutani will give commission for Agent worth 1,5% from total amount as
+                            stated in the Agreement</h6>
+                        <h6 class="ft14">4. Agent Commission is Taxable Income as stated in the Agreement</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Supplier</td>
+                    <td>:</td>
+                    <td>Perum Perhutani</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Destination</td>
+                    <td>:</td>
+                    <td>Buyer's option stated in purchase order (Exception Area: Pakistan)</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Marking</td>
+                    <td>:</td>
+                    <td>PHT</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Packaging</td>
+                    <td>:</td>
+                    <td>GI or New Zinc drums @240 kgs/drum as stated in the Invoice</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Document</td>
+                    <td>:</td>
+                    <td>Regulated on Agency agreement</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Payments</td>
+                    <td>:</td>
+                    <td>Irrevocable L/C or T/T with Bank Guarantee 25% from total amount paid</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Reference</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Validity</td>
+                    <td>:</td>
+                    <td>This Confirmation of Sales (COS) will be valid until January 31, 2021</td>
+                </tr>
+            </table>
+            <h5 class="mt-2">Note: Without a signature this file is valid</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function generatePDF() {
+        var element = document.getElementById("invoice");
+        // element.style.display = "block";
+
+        // html2pdf()
+        //     .from(element)
+        //     .save('COS.pdf');
+
+        html2pdf().from(element).set({
+            margin: [10, 10, 0, 10],
+            filename: 'COS.pdf',
+        }).save();
+    }
+
+    window.onload = generatePDF;
+    // window.history.back();
+</script>
+
+
+</html>

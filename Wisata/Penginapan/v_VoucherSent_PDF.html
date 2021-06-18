@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page needs -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Toko Perhutani</title>
+    <!-- Mobile specific metas  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo-perhutani.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+<!-- End Plugin -->
+<style>
+    html {
+        margin: 3em 24em;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .box {
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        /* box-shadow: 2px 12px 24px rgb(0 0 0 / 5%); */
+        border-radius: 8px;
+        max-height: 100%;
+        padding: 8px 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .mb-1 {
+        margin-bottom: 10px !important;
+    }
+
+    .mb-2 {
+        margin-bottom: 20px !important;
+    }
+
+    .mb-3 {
+        margin-bottom: 30px !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 40px !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 50px !important;
+    }
+
+    .mb-6 {
+        margin-bottom: 60px !important;
+    }
+
+    .mb-7 {
+        margin-bottom: 70px !important;
+    }
+
+    .mt-0 {
+        margin: 0px !important;
+    }
+
+    .mt-1 {
+        margin-top: 10px !important;
+    }
+
+    .mt-2 {
+        margin-top: 20px !important;
+    }
+
+    .mt-3 {
+        margin-top: 30px !important;
+    }
+
+    .mt-4 {
+        margin-top: 40px !important;
+    }
+
+    .mt-5 {
+        margin-top: 50px !important;
+    }
+
+    .ml-auto {
+        margin-left: auto;
+    }
+
+    .ml-1 {
+        margin-left: 10px !important;
+    }
+
+    .ml-2 {
+        margin-left: 20px !important;
+    }
+
+    .ml-3 {
+        margin-left: 30px !important;
+    }
+
+    .ml-4 {
+        margin-left: 40px !important;
+    }
+
+    .ml-5 {
+        margin-left: 50px !important;
+    }
+
+    .ml-6 {
+        margin-left: 60px !important;
+    }
+
+    .ml-7 {
+        margin-left: 70px !important;
+    }
+
+    .mr-0 {
+        margin-right: 0px !important;
+    }
+
+    .mr-1 {
+        margin-right: 10px !important;
+    }
+
+    .mr-2 {
+        margin-right: 20px !important;
+    }
+
+    .mr-3 {
+        margin-right: 30px !important;
+    }
+
+    .mr-4 {
+        margin-right: 40px !important;
+    }
+
+    .font-10 {
+        font-size: 10px !important;
+    }
+
+    .font-11 {
+        font-size: 11px !important;
+    }
+
+    .v-middle {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .text-main {
+        color: #219653;
+        font-weight: 500;
+    }
+
+    .text-muted {
+        color: #828282;
+    }
+
+    .text-muted1 {
+        color: #BDBDBD;
+        font-weight: 400;
+    }
+
+    .font-weight-thick {
+        font-weight: 400;
+    }
+
+    .font-weight-normal {
+        font-weight: 500;
+    }
+
+    .font-weight-bold {
+        font-weight: 600;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .float-right {
+        float: right !important;
+    }
+
+    .box-header {
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .box-body {
+        padding: 3px 10px;
+    }
+
+    .p-absolute {
+        position: absolute;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .label-header-2 {
+        margin: 8px 20px 10px;
+        font-weight: 600;
+    }
+
+    .card-small {
+        background: #fff;
+        padding: 12px 30px;
+        border: 1px solid #27AE60;
+        border-radius: 8px;
+        border-left: 8px solid #27AE60;
+    }
+
+    .ico--download {
+        content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.69393 27.1111H22.0273C22.4566 27.1112 22.8698 27.2743 23.1835 27.5674C23.4972 27.8605 23.688 28.2617 23.7172 28.6901C23.7465 29.1184 23.6121 29.5418 23.3412 29.8749C23.0702 30.2079 22.683 30.4257 22.2577 30.4842L22.0273 30.5H1.69393C1.26462 30.4999 0.851357 30.3368 0.537658 30.0437C0.223958 29.7506 0.0332052 29.3494 0.00394328 28.921C-0.0253186 28.4927 0.109092 28.0693 0.380016 27.7362C0.65094 27.4032 1.03818 27.1854 1.46348 27.1269L1.69393 27.1111H22.0273H1.69393ZM11.6301 0.0158147L11.8606 0C12.2701 1.72673e-05 12.6657 0.148304 12.9743 0.417437C13.2828 0.68657 13.4835 1.05834 13.5392 1.464L13.555 1.69444V19.0636L18.6497 13.9713C18.937 13.684 19.3179 13.5096 19.7231 13.4797C20.1282 13.4499 20.5306 13.5666 20.857 13.8086L21.0467 13.9713C21.334 14.2586 21.5084 14.6395 21.5383 15.0447C21.5681 15.4498 21.4514 15.8522 21.2094 16.1786L21.0467 16.3683L13.058 24.3548C12.7711 24.6418 12.3907 24.8163 11.9861 24.8465C11.5814 24.8768 11.1794 24.7608 10.853 24.5197L10.6632 24.3548L2.67445 16.3683C2.37127 16.066 2.1938 15.6601 2.17771 15.2322C2.16162 14.8043 2.3081 14.3862 2.58772 14.062C2.86733 13.7377 3.25934 13.5313 3.68492 13.4843C4.1105 13.4373 4.5381 13.5532 4.88174 13.8086L5.07152 13.9713L10.1661 19.0681V1.69444C10.1662 1.28498 10.3145 0.889375 10.5836 0.580786C10.8527 0.272197 11.2245 0.0715017 11.6301 0.0158147L11.8606 0L11.6301 0.0158147Z' fill='%2327AE60'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 11px !important;
+    }
+
+    .ico--clock {
+        content: url("data:image/svg+xml,%3Csvg viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.96875C5.78854 1.96875 1.96875 5.78854 1.96875 10.5C1.96875 15.2041 5.79633 19.0312 10.5 19.0312C15.2111 19.0312 19.0312 15.2111 19.0312 10.5C19.0312 5.79592 15.2041 1.96875 10.5 1.96875ZM14.9297 11.8125H10.0078C9.9643 11.8125 9.92257 11.7952 9.8918 11.7644C9.86104 11.7337 9.84375 11.6919 9.84375 11.6484V4.75781C9.84375 4.7143 9.86104 4.67257 9.8918 4.6418C9.92257 4.61104 9.9643 4.59375 10.0078 4.59375H10.9922C11.0357 4.59375 11.0774 4.61104 11.1082 4.6418C11.139 4.67257 11.1562 4.7143 11.1562 4.75781V10.5H14.9297C14.9732 10.5 15.0149 10.5173 15.0457 10.5481C15.0765 10.5788 15.0938 10.6206 15.0938 10.6641V11.6484C15.0938 11.6919 15.0765 11.7337 15.0457 11.7644C15.0149 11.7952 14.9732 11.8125 14.9297 11.8125Z' fill='%23BDBDBD'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 15px !important;
+    }
+
+    .icon-location-gray {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.99979 1.44531C12.4616 1.44531 15.2676 4.25138 15.2676 7.71317C15.2676 10.3617 13.4066 13.2482 9.73265 16.4033C9.52836 16.5788 9.2679 16.6752 8.99859 16.675C8.72927 16.6747 8.46898 16.5779 8.265 16.402L8.022 16.1912C4.51072 13.1183 2.73193 10.3026 2.73193 7.71317C2.73193 4.25138 5.538 1.44531 8.99979 1.44531ZM8.99979 5.30246C8.36043 5.30246 7.74725 5.55644 7.29516 6.00854C6.84306 6.46063 6.58908 7.07381 6.58908 7.71317C6.58908 8.35253 6.84306 8.96571 7.29516 9.4178C7.74725 9.8699 8.36043 10.1239 8.99979 10.1239C9.63915 10.1239 10.2523 9.8699 10.7044 9.4178C11.1565 8.96571 11.4105 8.35253 11.4105 7.71317C11.4105 7.07381 11.1565 6.46063 10.7044 6.00854C10.2523 5.55644 9.63915 5.30246 8.99979 5.30246Z' fill='%23BDBDBD'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    width: 16px !important;
+}
+</style>
+
+<body>
+    <div style="padding:1em 7em;">
+        <div class="box mt-4 mb-4">
+            <div class="box-header text-center">
+                <div class="float-right" style="margin-right: 8em;">
+                    <div class="p-absolute d-flex mr-2">
+                        <p class="font-11 text-main font-weight-bold  v-middle">Download</p>
+                        <i class="ico--download ml-1"></i>
+                    </div>
+                </div>
+                <h5 class="label-header-2">E-Voucher Hotel</h5>
+                <!-- <div class="numbering v-middle">3</div> -->
+
+            </div>
+            <div class="box-body text-left" style="margin: 15px 4em">
+                <table style="width:100%; margin: 10px 0px;">
+                    <tr>
+                        <td>
+                            <h5 class="font-weight-bold mt-2">Voucher Hotel</h5>
+                            <p class="mb-1 mt-1 font-11">Itenary</p>
+                            <p class="mb-0 font-11 text-muted1">139183918939139</p>
+                            <h5 class="font-weight-bold mt-2">The Trans Lexury Hotel</h5>
+                            <div class="d-flex v-middle mt-1 mb-1">
+                                <i class="icon-location-gray mr-1"></i>
+                                <p class="text-muted font-weight-thick font-10 v-middle">Jl. Gatot
+                                    Subroto No. 289,
+                                    Buahbatu, Bandung, Jawa Barat, Indonesia, 40273
+                                </p>
+                            </div>
+                            <h6 class="text-muted font-weight-bold mt-2 mb-1">Phone</h6>
+                            <h6 class="text-muted1">0313903091001</h6>
+                            <h6 class="text-muted font-weight-bold mt-2 mb-1">Email</h6>
+                            <h6 class="text-muted1">Fadhilyanuar@gmail.com</h6>
+                        </td>
+                        <td class="text-right">
+                            <h2 class="text-main font-weight-bold" style="margin-top:-4em;">TokoPerhutani</h2>
+                            <img src="../../assets/images/new_img/QR Code.svg" class="mt-2 w-50">
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%; margin: 20px 0px;">
+                    <tr>
+                        <td style="padding-right: 25px;">
+                            <div class="card-small">
+                                <p class="text-muted font-10 mb-0">Check in <span class="text-muted1">/Check in</span>
+                                </p>
+                                <div class="d-flex v-middle">
+                                    <h4 class="font-weight-bold text-main mr-2">26 April 2021</h4>
+                                    <div class="d-flex v-middle">
+                                        <i class="ico--clock mr-1"></i>
+                                        <h6 class="text-muted v-middle">13:00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card-small">
+                                <p class="text-muted font-10 mb-0">Check in <span class="text-muted1">/Check in</span>
+                                </p>
+                                <div class="d-flex v-middle">
+                                    <h4 class="font-weight-bold text-main mr-2">28 April 2021</h4>
+                                    <div class="d-flex v-middle">
+                                        <i class="ico--clock mr-1"></i>
+                                        <h6 class="text-muted v-middle">12:00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width:100%; margin:10px 0;">
+                    <tr>
+                        <td style="padding: 10px 0;" colspan="2">
+                            <h5 class="mt-2 font-weight-bold">Detail Booking</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Guest(s) <span class="text-muted1">/Tamu</span>
+                            </h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted">Fadhil Yanuar</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Guest per room<span class="text-muted1">/Tamu per
+                                    kamar </span></h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted">2 Guest(s) / room<span class="text-muted1">/Tamu
+                                    /
+                                    Kamar</span></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Room Type<span class="text-muted1">/Tipe kamar
+                                </span></h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted">Superior Room</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Number of room<span class="text-muted1">/Jumlah
+                                    kamar </span></h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted">2</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Include breakfast<span class="text-muted1">/Termasuk
+                                    Sarapan </span></h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted">Yes<span class="text-muted1">/Ya</span></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            <h6 class="text-muted">Include<span class="text-muted1">/Termasuk</span>
+                            </h6>
+                        </td>
+                        <td style="padding: 10px 0;" class="text-right">
+                            <h6 class="text-muted"><i class="ico--wifi-grey-2 mr-1"></i>Free
+                                Wifi<span class="text-muted1">/Wifi
+                                    Gratis</span>
+                            </h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

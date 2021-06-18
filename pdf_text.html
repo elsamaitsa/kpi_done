@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <button style="margin-right:auto; margin-left:auto; display:block" onclick="generatePDF()">Wohooo GUYS</button>
+</body>
+<script>
+    function generatePDF(){
+    const element = document.getElementById("invoice");
+    html2pdf()
+    .from(element)
+    .save();
+}
+</script>
+</html>

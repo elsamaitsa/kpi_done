@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+    <title>Invoice PDF</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        font-weight: 500;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table tr td {
+        vertical-align: top;
+    }
+
+    .container {
+        margin: 10px 30px;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .container-table {
+        padding: 10px 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    table tr {
+        line-height: 40px;
+    }
+
+    .table-border {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table-border tr td {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ft14 {
+        font-size: 14px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2px;
+        margin-bottom: 3px;
+    }
+
+    .mt-1 {
+        margin-top: 5px;
+    }
+
+    .mt-2 {
+        margin-top: 10px;
+    }
+
+    .mt-3 {
+        margin-top: 15px;
+    }
+
+    #invoice {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="invoice">
+            <div style="display: flex;">
+                <img src="assets/images/logo-perhutani.png" style="width:10%; height:10%;">
+                <img src="assets/images/qrcode.png" style="width:9%; margin-left:auto;">
+            </div>
+            <h4 class="text-center title">Performa Invoice</h4>
+            <table class="ft14 mt-2">
+                <tr>
+                    <td width="30%">Agent</td>
+                    <td>:</td>
+                    <td>Miatronika Karya Niaga</td>
+                </tr>
+                <tr>
+                    <td>PO No</td>
+                    <td>:</td>
+                    <td>No PO : 087/PO/DIVSAR/VII/2019</td>
+                </tr>
+                <tr>
+                    <td>COS No</td>
+                    <td>:</td>
+                    <td>No COS : 087/PO/DIVSAR/VII/2019</td>
+                </tr>
+                <tr>
+                    <td>Consignee</td>
+                    <td>:</td>
+                    <td>SHANGHAI SOLENIS SPECIAL CHEMICAL CO.LTD</td>
+                </tr>
+                <tr>
+                    <td>Consignee Address</td>
+                    <td>:</td>
+                    <td>688 SHENFU ROAD. XIN ZHUANG INDUSTRIAL ZONE, SHANGHAI 201108 P.R.C. TAX ID (USCI) NUMBER :
+                        913100000607333426B TEL: 0086 21 54422085 FAX: 0086 21 54422085 ATTN.: AMILIA KAN
+                        ZKAN@SOLENIS.COM</td>
+                </tr>
+                <tr>
+                    <td>Notify</td>
+                    <td>:</td>
+                    <td>688 SHENFU ROAD. XIN ZHUANG INDUSTRIAL ZONE, SHANGHAI 201108 P.R.C. TAX ID (USCI) NUMBER :
+                        913100000607333426B TEL: 0086 21 54422085 FAX: 0086 21 54422085 ATTN.: AMILIA KAN
+                        ZKAN@SOLENIS.COM</td>
+                </tr>
+                <tr>
+                    <td>Invoice Address</td>
+                    <td>:</td>
+                    <td>NATURAL PINE FOREST PRODUCTION LTD 8 WILKIE ROAD, #03-01, WILKIE EDGE SINGAPORE – 228095</td>
+                </tr>
+                <tr>
+                    <td>Original Invoice &
+                        Packing List to be sent to</td>
+                    <td>:</td>
+                    <td>NATURAL PINE FOREST PRODUCTION LTD</td>
+                </tr>
+                <tr>
+                    <td>COO & COA to be sent to</td>
+                    <td>:</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>For</td>
+                    <td>:</td>
+                    <td>2.0 FCL= 160.0 drums= 38.40 MT. NW of Gumrosin in Zinc drums without pallets.</td>
+                </tr>
+                <tr>
+                    <td>HS Code</td>
+                    <td>:</td>
+                    <td>3806.10.00</td>
+                </tr>
+                <tr>
+                    <td>Port of Shipment</td>
+                    <td>:</td>
+                    <td>Port Tanjung Mas Indonesia</td>
+                </tr>
+                <tr>
+                    <td>Port of Destination</td>
+                    <td>:</td>
+                    <td>Shanghai Port, China</td>
+                </tr>
+                <tr>
+                    <td>ETD</td>
+                    <td>:</td>
+                    <td>Prompt Shipment</td>
+                </tr>
+                <tr>
+                    <td>Freight</td>
+                    <td>:</td>
+                    <td>Collect</td>
+                </tr>
+                <tr>
+                    <td>Notes of Origin</td>
+                    <td>:</td>
+                    <td>These goods are Indonesian Product</td>
+                </tr>
+                <tr>
+                    <td>Payment Method</td>
+                    <td>:</td>
+                    <td>TT 50% cash in advance</td>
+                </tr>
+                <tr>
+                    <td>Remark for PHT/Agent</td>
+                    <td>:</td>
+                    <td>PI No. 52212/PI/DIVSAR/II/2021; PI valid until February 28, 2021; Please issue The Delivery
+                        Order (Agent), Please issue The Shipping Instruction (Perhutani), Free time 14 days is required,
+                        Photo stuffing and Sticker are requested.</td>
+                </tr>
+                <tr>
+                    <td>Remark for PHT/Agent</td>
+                    <td>:</td>
+                    <td>PI No. 52212/PI/DIVSAR/II/2021; PI valid until February 28, 2021; Please issue The Delivery
+                        Order (Agent), Please issue The Shipping Instruction (Perhutani), Free time 14 days is required,
+                        Photo stuffing and Sticker are requested.</td>
+                </tr>
+            </table>
+
+            <div class="container-table">
+                <table class="table-border">
+                    <tr>
+                        <td class="text-center" rowspan="2">Product</td>
+                        <td class="text-center" colspan="3">Quantity</td>
+                        <td class="text-center" rowspan="2">Price (USD/MT)</td>
+                        <td class="text-center" rowspan="2">Amount (USD)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">FCL</td>
+                        <td class="text-center">Drums</td>
+                        <td class="text-center">MT</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>Gumrosin WW</td>
+                        <td>2.0</td>
+                        <td>160.0</td>
+                        <td>38.40</td>
+                        <td>1,200.00 (FOB)</td>
+                        <td>46,080.00</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td colspan="5">Total Amount</td>
+                        <td>46,080.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Say: US DOllars Fourty-six Thousand And Eighty</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4 class="title mt-3">Payment Information</h4>
+            <table class="mt-1">
+                <tr>
+                    <td width="30%">Beneficiary</td>
+                    <td>:</td>
+                    <td>Perum Perhutani Jl. TB Simatupang No. 22, Jati Padang, Pasar Minggu, Jakarta Selatan, DKI
+                        Jakarta 12540, Indonesia</td>
+                </tr>
+            </table>
+
+            <h4 class="title mt-3">For a Payment by Tt 50/50</h4>
+            <table>
+                <tr>
+                    <td width="30%">Receiver</td>
+                    <td>:</td>
+                    <td>Bank Rakyat Indonesia PT(Persero), KCK Jakarta, Jakarta Pusat</td>
+                </tr>
+                <tr>
+                    <td>SWIFT Code</td>
+                    <td>:</td>
+                    <td>BRINIDJAXXXX</td>
+                </tr>
+                <tr>
+                    <td>Account Name</td>
+                    <td>:</td>
+                    <td>Perum Perhutani</td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td>0206.02.001333.30.1</td>
+                </tr>
+            </table>
+            <h5 class="mt-2">Note: Without a signature this file is valid</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function generatePDF() {
+        var element = document.getElementById("invoice");
+        element.style.display = "block";
+
+        // html2pdf()
+        // .from(element)
+        // .save('Invoice.pdf');
+        html2pdf().from(element).set({
+            margin: [10, 10, 0, 10],
+            filename: 'PI.pdf',
+        }).save();
+
+    }
+
+    window.onload = generatePDF;
+    // window.history.back();
+</script>
+
+
+</html>

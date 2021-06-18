@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+    <title>Invoice PDF</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        font-weight: 500;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table tr td {
+        vertical-align: top;
+    }
+
+    .container {
+        margin: 10px 30px;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .container-table {
+        padding: 10px 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    table tr {
+        line-height: 40px;
+    }
+
+    .table-border {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table-border tr th {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .table-border tr td {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ft14 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2px;
+        margin-bottom: 3px;
+    }
+
+    .mt-1 {
+        margin-top: 5px;
+    }
+
+    .mt-2 {
+        margin-top: 10px;
+    }
+
+    .mt-3 {
+        margin-top: 15px;
+    }
+
+    #invoice{
+        background-image: url('assets/images/watermark.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto; 
+    }
+</style>
+
+<body>
+    
+    <div class="container">
+       
+        <div id="invoice">
+            <div style="display: flex;">
+                <img src="assets/images/logo-perhutani.png" style="width:10%; height:10%;">
+                <img src="assets/images/qrcode.png" style="width:9%; margin-left:auto;">
+            </div>
+            <table class="ft14 mt-2">
+                <tr>
+                    <td width="30%">TO MESSERS</td>
+                    <td>:</td>
+                    <td>SINOCHEM HEBEI CORPORATION SINOCHEM BUILDING, 707 LIANGMENG ROAD, SHIJIAZHUANG 050061, CHINA
+                    </td>
+                </tr>
+
+            </table>
+            <h4 class="text-center title">Invoice</h4>
+            <table class="ft14 mt-2">
+                <tr>
+                    <td width="30%">INVOICE NUMBER</td>
+                    <td>:</td>
+                    <td>102045</td>
+                </tr>
+                <tr>
+                    <td>FOR</td>
+                    <td>:</td>
+                    <td>240.000 drums= 57.6 MT of Gumrosin WW Grade</td>
+                </tr>
+                <tr>
+                    <td>MARSK SHIPPED BY</td>
+                    <td>:</td>
+                    <td>Gumrosin WW Grade</td>
+                </tr>
+                <tr>
+                    <td>PORT OF LOADING/td>
+                    <td>:</td>
+                    <td>Port Tanjung Mas Indonesia</td>
+                </tr>
+                <tr>
+                    <td>DESTINATION</td>
+                    <td>:</td>
+                    <td>HUANGPU PORT, CHINA</td>
+                </tr>
+                <tr>
+                    <td>BL NO</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>BL DATE.</td>
+                    <td>:</td>
+                    <td>February 19, 2021</td>
+                </tr>
+                <tr>
+                    <td>PAYMENT</td>
+                    <td>:</td>
+                    <td>TT ADVANCE</td>
+                </tr>
+                <tr>
+                    <td>FREIGHT</td>
+                    <td>:</td>
+                    <td>Collect</td>
+                </tr>
+                <tr>
+                    <td>COS</td>
+                    <td>:</td>
+                    <td>1000514/COS/DIVSAR/I/2021 (Addendum 2)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">PL NO.</td>
+                    <td rowspan="2">:</td>
+                    <td>51977</td>
+                </tr>
+                <tr>
+                    <td>According to the spesification on bellow: </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table class="table-border ft14 ">
+                            <tr>
+                                <th rowspan="2">DESCRIPTION OF GOODS</th>
+                                <th colspan="2">QUANTITY</th>
+                                <th>QUALITY</th>
+                                <th colspan="3">UNIT PRICE</th>
+                                <th>PAYABLE AMOUNT</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">DRUMS</td>
+                                <td class="text-center">MT</td>
+                                <td class="text-center">GROUP</td>
+                                <td class="text-center">FOB</td>
+                                <td class="text-center">CFR</td>
+                                <td class="text-center">CLF</td>
+                                <td class="text-center">USD</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">3.D Fel About 57.600 Kgs NW of Indonesian Gumrosin WW Grade </td>
+                                <td class="text-center">240</td>
+                                <td class="text-center">57.6</td>
+                                <td class="text-center">Gumrosin WW Grade</td>
+                                <td class="text-center">1,100.00</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">63,300.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" colspan="7">Total</td>
+                                <td class="text-center">63,300.00</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Say : US Dollars Sixty-three Thousand, Three Hundred And Sixty
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Breakdown of payable amount
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table class="ft14">
+                            <tr>
+                                <td>FOB</td>
+                                <td>1,100.00</td>
+                                <td>63,360.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid #4f4f4f;">Total</td>
+                                <td style="border-top: 1px solid #4f4f4f;">63,360.00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BENEFICIARY NAME</td>
+                    <td>:</td>
+                    <td>PERUM PERHUTANI GEDUNG MANGGALA WANABAKTI BLOK VII LT. 9-11 Jl. GATOT SUBROTO SENAYAN JAKARTA 10270 INDONESIA</td>
+                </tr>
+                <tr>
+                    <td>Please Transfer to</td>
+                    <td>:</td>
+                    <td>PERUM PERHUTANI</td>
+                </tr>
+                <tr>
+                    <td>Bank Receiver</td>
+                    <td>:</td>
+                    <td>Bank Rakyat Indonesia PT (Persero),KCK Jakarta, Jakarta Pusat</td>
+                </tr>
+                <tr>
+                    <td>SWIFT Code</td>
+                    <td>:</td>
+                    <td>BRINIDJAXXX</td>
+                </tr>
+                <tr>
+                    <td>Account Name</td>
+                    <td>:</td>
+                    <td>Perum Perhutani</td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td>0206.02.001333.30.1</td>
+                </tr>
+            </table>
+
+            <h5 class="mt-2">Note: Without a signature this file is valid</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function generatePDF() {
+        var element = document.getElementById("invoice");
+
+        html2pdf().from(element).set({
+            margin: [10, 10, 10, 10],
+            filename: 'Invoice.pdf'
+            // image: {type: 'jpg', quality: 0.99}
+        }).save();
+    }
+
+    window.onload = generatePDF;
+    // window.history.back();
+</script>
+
+
+</html>

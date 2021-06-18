@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page needs -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Toko Perhutani</title>
+    <!-- <meta
+    name="Before buying it, get the feel and look of the Refresh Food & Restaurant Website Template by viewing the demo preview. View the pages, examine the images, click the buttons, explore the features.">
+  <meta name="keywords"
+    content="food shop, fresh, modern, Refresh farm, Restaurant farm shop, Refresh food, Refresh shop, agriculture, e-commerce, eco, eco products, farm, farming, food, health, Restaurant, Refresh food, retail, shop, store" /> -->
+
+    <!-- Mobile specific metas  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo-perhutani.png">
+
+    <!-- CSS Style -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+    <!-- font-awesome & simple line icons CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/simple-line-icons.css" media="all">
+
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datepicker3.css">
+
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.transitions.css">
+
+    <!-- animate CSS  -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css" media="all">
+
+    <!-- flexslider CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/flexslider.css">
+
+    <!-- jquery-ui.min CSS  -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+
+    <!-- Revolution Slider CSS -->
+    <link href="../../assets/css/revolution-slider.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- style CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/apps.css" media="all">
+
+    <!-- Slick Sider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <!-- jquery js -->
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIwTPctnSM2PWcbK6cMdlZaSgEYIKp5U&callback=initMap"
+        async defer></script>
+</head>
+<!-- End Plugin -->
+
+<body class="cms-index-index cms-home-page">
+
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <!-- mobile menu -->
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Panduan</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">Contact Center</a></li>
+            <li><a href="#">Cara Pembayaran</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Sertifikat Perhutani</a></li>
+        </ul>
+    </div>
+    <!-- end mobile menu -->
+    <div id="page">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-xs-12">
+                            <!-- Header Logo -->
+
+                            <h6 class="title-app">TokoPerhutani</h6>
+                            <!-- End Header Logo -->
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-4 col-xs-12 ml-maxright">
+                            <div class="row float-right" style="display:flex;">
+                                <!-- <div class="input-group" style="margin-right: 3px;">
+                                    <span class="input-group-addon custom-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
+                                    <input type="text" class="form-control custom-input" placeholder="Search" aria-describedby="basic-addon1">
+                                  </div> -->
+
+                                <!-- Keranjang Belanja -->
+                                <div class="col-sm-1" style="margin:auto 0px auto auto;">
+                                    <div class="dropdown block-company-wrapper hidden-xs">
+                                        <a role="button" data-toggle="dropdown" data-target="#"
+                                            class="block-company dropdown-toggle icon-menu" href="#">
+                                            <i class="fa cart_icon font-20 text-main"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- Notifikasi -->
+                                <div class="col-sm-1" style="margin:auto 0px;">
+                                    <div class="dropdown block-company-wrapper hidden-xs"> <a role="button"
+                                            data-toggle="dropdown" data-target="#"
+                                            class="block-company dropdown-toggle icon-menu" href="#"><i
+                                                class="fa notif_icon"></i></a>
+                                        <ul class="dropdown-menu content-dropdown">
+                                            <li class="header-dropdown">Notifikasi</li>
+                                            <li class="divider divider-dropdown" role="separator"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="badges"></div>
+                                </div>
+
+                                <!-- Pesan -->
+                                <div class="col-sm-1 mr-2" style="margin:auto 0px;">
+                                    <div class="dropdown block-company-wrapper hidden-xs"> <a role="button"
+                                            data-toggle="dropdown" data-target="#"
+                                            class="block-company dropdown-toggle icon-menu" href="#"><i
+                                                class="email_icon"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- User -->
+                                <div class="col-sm-1 mr-2" style="margin:auto 0px;">
+                                    <h6 class="font-weight-bold text-white">Fadhillah</h6>
+                                </div>
+                                <div class="col-sm-1 mr-2" style="margin:auto 0px;">
+                                    <div class="dropdown block-company-wrapper hidden-xs"> <a role="button"
+                                            data-toggle="dropdown" data-target="#"
+                                            class="block-company dropdown-toggle icon-menu" href="#"><i
+                                                class="user_icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- Navbar  Menu-->
+        <nav class="nav-bg-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="mtmegamenu">
+                            <ul>
+                                <li class="mt-root">
+                                    <div class="mt-root-item"><a href="beranda.html">
+                                            <div class="title title_font"><span class="title-text">Beranda</span></div>
+                                        </a></div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item"><a href="panduan.html">
+                                            <div class="title title_font"><span class="title-text">Panduan</span></div>
+                                        </a></div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item"><a href="cara_pembayaran.html">
+                                            <div class="title title_font"><span class="title-text">Cara
+                                                    Pembayaran</span></div>
+                                        </a></div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item"><a href="syarat_ketentuan.html">
+                                            <div class="title title_font"><span class="title-text">Syarat &
+                                                    Ketentuan</span></div>
+                                        </a></div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item"><a href="sertifikat_perhutani.html">
+                                            <div class="title title_font"><span class="title-text">Sertifikat
+                                                    Perhutani</span></div>
+                                        </a></div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="dropdown jtv-language-box mt-2">
+                                        <a role="button" data-toggle="dropdown" data-target="#"
+                                            class="block-language dropdown-toggle d-flex" href="#"> <i
+                                                class="ina-flag p"></i><span class="fa fa-chevron-down lay-flag"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li> <a class="selected" href="#" style="display:flex;"> <i
+                                                        class="ina-flag p-absolute"></i><span class="ml-3">
+                                                        Indonesia</span></a></li>
+                                            <li> <a href="#" style="display:flex;"> <i
+                                                        class="uk-flag p-absolute"></i><span class="ml-3">
+                                                        English</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mt-root">
+                                    <div class="mt-root-item">
+                                        <label class="wrap-retail_1 input">
+                                            <select class="dropdown-menu2" style="width:48px;">
+                                                <option>IDR</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <div class="breadcrumbs">
+            <div class="container container-row">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul>
+                            <li class="home"> <a href="#">Home</a> <span>/</span>
+                            </li>
+                            <li> <a href="v_BeliProduk.html" title="">Kategori</a> <span>/ </span> </li>
+                            <li class="active">Wisata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-row mt-3 mb-3">
+            <div class="row">
+                <div class="col-sm-5 col-md-5">
+                    <div class="mySlides">
+                        <img src="../../assets/images/new_img/Rectangle-wisata1.png" class="img-gallery">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="../../assets/images/new_img/Rectangle-wisata2.png" class="img-gallery">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="row" style="margin:0px;">
+                        <div class="column">
+                            <img class="demo cursor img-col-gallery"
+                                src="../../assets/images/new_img/Rectangle-wisata1.png" onclick="currentSlide(1)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor img-col-gallery"
+                                src="../../assets/images/new_img/Rectangle-wisata2.png" onclick="currentSlide(2)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-7">
+                    <div class="box-detail">
+                        <div class="title-detail d-flex">
+                            <h4 class="font-weight-bold">Tangkuban Perahu</h4>
+                            <button class="btn btn-green btn-sm ml-auto">Wisata</button>
+                        </div>
+                        <div class="bt-grey mb-1 mt-1">
+                            <h5 class="font-weight-bold">Location</h5>
+                        </div>
+                        <div style="height:200px">
+                            <div id="map"></div>
+                        </div>
+
+                        <!-- RATING -->
+                        <div class="mt-1">
+                            <i class="icon-star-1"></i>
+                            <i class="icon-star-1"></i>
+                            <i class="icon-star-1"></i>
+                            <i class="icon-star-1"></i>
+                            <i class="icon-star-0"></i>
+                        </div>
+                        <div class="d-flex v-middle mt-1 mb-1">
+                            <i class="icon-location-gray mr-1"></i>
+                            <p class="text-muted font-weight-thick font-10 v-middle">Jl. Gatot Subroto No. 289,
+                                Buahbatu, Bandung, Jawa Barat, Indonesia, 40273
+                            </p>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-sm-4 col-md-4">
+                                <div class="d-flex v-middle mt-1 mb-1">
+                                    <i class="ico-calendar mr-1"></i>
+                                    <p class="font-weight-bold font-11 v-middle">Available Today</p>
+                                </div>
+                                <div class="d-flex v-middle mt-1 mb-1">
+                                    <i class="ico-clock mr-1"></i>
+                                    <p class="font-weight-bold font-11 v-middle">Opening Hours</p>
+                                </div>
+                                <p class="text-muted1 font-weight font-10 mt-1 mb-0 ml-2">Tue, 09:00-19:00</p>
+                                <a class="text-main font-weight font-10 mb-0 ml-2" href="#click_opening"
+                                    id="click_opening">See all opening hours</a>
+                                <div id="content_opening">
+                                    <div class="d-flex v-middle mb-2">
+                                        <h6 class="fw-7 v-middle">Reguler Season</h6>
+                                        <i class="icon--close-gr ml-auto closed"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="font-10">Monday : 09:00-19:00</li>
+                                        <li class="font-10">Tuesday : 09:00-19:00</li>
+                                        <li class="font-10">Wednesday : 09:00-19:00</li>
+                                        <li class="font-10">Thursday : 09:00-19:00</li>
+                                        <li class="font-10">Friday : 09:00-19:00</li>
+                                        <li class="font-10">Saturday : 09:00-19:00</li>
+                                        <li class="font-10">Sunday : 09:00-19:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-md-8">
+                                <div class="d-flex mt-1 mb-1">
+                                    <div>
+                                        <p class="font-10 text-muted font-weight-thick mb-0">Start From</p>
+                                        <h4 class="font-weight-bold text-orange mb-0">Rp. 2.500.000</h4>
+                                        <div class="text-right mr-1">
+                                            <h6 class="text-main mt-0 font-10">*Per days</h6>
+                                        </div>
+                                    </div>
+                                    <div class="obj-middle ml-2">
+                                        <button class="btn btn-sm btn-outline-green"><i
+                                                class="icon-shop-cl v-middle"></i></button>
+                                        <button class="btn btn-sm btn-light-red ml-2">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box d-flex" style="padding: 11.5px 10px">
+                                    <i class="icon-checkout-2 mr-1" id="click_checkout"></i>
+                                    <div>
+                                        <h6 class="text-muted font-10">Visit Date</h6>
+                                        <input class="readonly-style date" type="text" id="datepicker_checkout" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box d-flex" style="padding: 11.5px 10px">
+                                    <i class="icon-guest-2 mr-1" id="click_guest"></i>
+                                    <div>
+                                        <h6 class="text-muted font-10">Visitor</h6>
+                                        <h6 class="font-weight-bold font-13">3 Person</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bs-example">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default panel-no-br">
+                                    <div class="panel-heading panel-no-br">
+                                        <h4 class="panel-title">
+                                            Facilities<a data-toggle="collapse" data-parent="#accordion"
+                                                href="#collapseOne"><i
+                                                    class="fa fa-angle-down text-main float-right"></i></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body obj-middle">
+                                            <i class="icon-resto mr-2" title="Restaurant"></i><i
+                                                class="icon-mushola mr-2" title="Mushola"></i><i
+                                                class="icon-parking mr-2" title="Parking Area"></i>
+                                            <i class="icon-toilet mr-2" title="Toilet"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="box-slider">
+                <div class="slider">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="../../assets/images/Gondorukem.png" class="w-30">
+                            <h6 class="font-weight-bold">Fadhil Yanuar</h6>
+                            <div>
+                                <i class="icon-star-1"></i><i class="icon-star-1"></i><i class="icon-star-1"></i><i
+                                    class="icon-star-1"></i><i class="icon-star-0"></i>
+                            </div>
+                            <p class="text-muted1 mb-0 font-10">Actually, wasnt as good as three years ago</p>
+                            <p class="text-main text-right font-9 mt-1">25 April 2021</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="../../assets/images/Gondorukem.png" class="w-30">
+                            <h6 class="font-weight-bold">Fadhil Yanuar</h6>
+                            <div>
+                                <i class="icon-star-1"></i><i class="icon-star-1"></i><i class="icon-star-1"></i><i
+                                    class="icon-star-1"></i><i class="icon-star-0"></i>
+                            </div>
+                            <p class="text-muted1 mb-0 font-10">Actually, wasnt as good as three years ago</p>
+                            <p class="text-main text-right font-9 mt-1">25 April 2021</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="../../assets/images/Gondorukem.png" class="w-30">
+                            <h6 class="font-weight-bold">Fadhil Yanuar</h6>
+                            <div>
+                                <i class="icon-star-1"></i><i class="icon-star-1"></i><i class="icon-star-1"></i><i
+                                    class="icon-star-1"></i><i class="icon-star-0"></i>
+                            </div>
+                            <p class="text-muted1 mb-0 font-10">Actually, wasnt as good as three years ago</p>
+                            <p class="text-main text-right font-9 mt-1">25 April 2021</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="../../assets/images/Gondorukem.png" class="w-30">
+                            <h6 class="font-weight-bold">Fadhil Yanuar</h6>
+                            <div>
+                                <i class="icon-star-1"></i><i class="icon-star-1"></i><i class="icon-star-1"></i><i
+                                    class="icon-star-1"></i><i class="icon-star-0"></i>
+                            </div>
+                            <p class="text-muted1 mb-0 font-10">Actually, wasnt as good as three years ago</p>
+                            <p class="text-main text-right font-9 mt-1">25 April 2021</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="../../assets/images/Gondorukem.png" class="w-30">
+                            <h6 class="font-weight-bold">Fadhil Yanuar</h6>
+                            <div>
+                                <i class="icon-star-1"></i><i class="icon-star-1"></i><i class="icon-star-1"></i><i
+                                    class="icon-star-1"></i><i class="icon-star-0"></i>
+                            </div>
+                            <p class="text-muted1 mb-0 font-10">Actually, wasnt as good as three years ago</p>
+                            <p class="text-main text-right font-9 mt-1">25 April 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 mb-3">
+                <a href="#" class="text-main font-14">See More Review</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer template -->
+    <div class="container">
+        <footer class="footer-lay">
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row" style="margin:0px !important;">
+                        <div class="col-sm-3 col-md-3 col-xs-12">
+                            <img src="../../assets/images/logo-perhutani.png">
+                            <h6 class="text-main" style="margin-top: 5%;">Jl. TB Simatupang No.22, RT.1/RW.8, Jati
+                                Padang,
+                                Kec. Ps.
+                                Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540</h6>
+                        </div>
+                        <div class="col-sm-9 col-md-9 col-xs-12">
+                            <div class="col-sm-4 col-md-4 col-xs-6">
+                                <div class="footer-links">
+                                    <h6 class="text-main-footer">Bantuan</h6>
+                                    <div class="tabBlock" id="TabBlock-1">
+                                        <ul class="list-links list-unstyled">
+                                            <li><a href="#">Registrasi</a></li>
+                                            <li><a href="#">Cara Pengambilan</a></li>
+                                            <li><a href="#">Cara Pembayaran</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-xs-6">
+                                <div class="footer-links">
+                                    <h6 class="text-main-footer">Layanan</h6>
+                                    <div class="tabBlock" id="TabBlock-3">
+                                        <ul class="list-links list-unstyled">
+                                            <li> <a href="#">Contact Center</a> </li>
+                                            <li> <a href="#">FAQ</a> </li>
+                                            <li> <a href="#">Kontak Non-Kayu</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-xs-12">
+                                <div class="footer-links">
+                                    <h6 class="text-main-footer">Info Perhutani</h6>
+                                    <div class="tabBlock" id="TabBlock-4">
+                                        <ul class="list-links list-unstyled">
+                                            <li> <a href="#">Kualitas Kayu</a> </li>
+                                            <li> <a href="#">Kabar Terbaru</a> </li>
+                                            <li> <a href="#">Alamat Kantor</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3" style="padding-top:8px;">
+                                        <h6 style="font-size:15px; font-weight:700;">Temukan Kami di</h6>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a title="Connect us on Instagram" href="#"><i class="ig-button mr-1"></i></a>
+                                        <a title="Connect us on Facebook" href="#"><i class="fb-button mr-1"></i></a>
+                                        <a title="Connect us on Twitter" href="#"><i class="tw-button mr-1"></i></a>
+                                        <a title="Connect us on Youtube" href="#"><i class="yt-button mr-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <div class="box-footer"></div>
+    <a href="#" class="totop bg-dark"> </a>
+
+    <script>
+        function initMap() {
+            var mapOpts = {
+                center: {
+                    lat: 32.348289,
+                    lng: -90.430576
+                },
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.TERRAIN,
+                styles: [{
+                    "featureType": "road.local",
+                    "stylers": [{
+                        "weight": 4.5
+                    }]
+                }]
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), mapOpts);
+
+            var bicyclayer = new google.maps.BicyclingLayer();
+            bicyclayer.setMap(map);
+
+            var infowincontent = '<div style="width:200px">CONTENT</div>';
+
+            // Highway 80 Overpass marker
+            var marker0 = new google.maps.Marker({
+                position: {
+                    lat: 32.344902,
+                    lng: -90.352267
+                },
+                map: map,
+                title: 'Old Highway 80 Overpass',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow0 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Be careful of traffic on 80. Visibility is poor around the bends, but there are good shoulders further on. Clinton has gas stations, restaurants, and hotels. Loads of people commute on the Trace from Clinton to Ridgeland, so don\'t bike this during rush hour.'
+                )
+            });
+
+            marker0.addListener('click', function () {
+                infowindow0.open(map, marker0);
+            });
+
+            // Clinton Pullout Marker
+            var marker1 = new google.maps.Marker({
+                position: {
+                    lat: 32.334517,
+                    lng: -90.357348
+                },
+                map: map,
+                title: 'Clinton Pullout',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow1 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'There is a parking pullout here with a trash bin.'
+                )
+            });
+
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+
+            // Airplane Road Marker 
+            var marker2 = new google.maps.Marker({
+                position: {
+                    lat: 32.289223,
+                    lng: -90.430624
+                },
+                map: map,
+                title: 'Airplane Road',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow2 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Airport Road is probably the best way to get to Raymond from the Trace in that it has less traffic than the alternatives. Raymond lacks hotels, but it has gas stations and restaurants.'
+                )
+            });
+
+            marker2.addListener('click', function () {
+                infowindow2.open(map, marker2);
+            });
+
+            // Battle of Raymond Marker
+            var marker3 = new google.maps.Marker({
+                position: {
+                    lat: 32.277619,
+                    lng: -90.475709
+                },
+                map: map,
+                title: 'Battle of Raymond',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow3 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'The Battle of Raymond has a picnic table under a pretty tree.')
+            });
+
+            marker3.addListener('click', function () {
+                infowindow3.open(map, marker3);
+            });
+
+            // Bed and Breakfast Marker
+            var marker4 = new google.maps.Marker({
+                position: {
+                    lat: 32.259441,
+                    lng: -90.504122
+                },
+                map: map,
+                title: 'Mamie\'s Cottage',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow4 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'You can walk 150 yards from the Parkway to <a href="https://www.natcheztracetravel.com/raymond-bedandbreakfasts/mamies-cottage/558-comments.html">Mamie\'s Cottage Bed and Breakfast</a> 601.955.5777'
+                )
+            });
+
+            marker4.addListener('click', function () {
+                infowindow4.open(map, marker4);
+            });
+
+            // Dean Stand Marker
+            var marker5 = new google.maps.Marker({
+                position: {
+                    lat: 32.236025,
+                    lng: -90.543005
+                },
+                map: map,
+                title: 'Dean Stand ',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow5 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Dean Stand has trash bins, a picnic table, and a little creek.')
+            });
+
+            marker5.addListener('click', function () {
+                infowindow5.open(map, marker5);
+            });
+
+            // Learned 
+            var marker6 = new google.maps.Marker({
+                position: {
+                    lat: 32.221740,
+                    lng: -90.561419
+                },
+                map: map,
+                title: 'Old Port Gibson Overpass',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow6 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Learned is close to the Trace and the roads around it have relatively little traffic. <a href="https://www.yelp.com/biz/h-d-gibbes-and-sons-learned">H D Gibbes & Sons</a> is an old country general store in Learned that sells snacks, water, steak, and whiskey, but they only take cash.'
+                )
+            });
+
+            marker6.addListener('click', function () {
+                infowindow6.open(map, marker6);
+            });
+
+            // Highway 27
+            var marker7 = new google.maps.Marker({
+                position: {
+                    lat: 32.182592,
+                    lng: -90.639203
+                },
+                map: map,
+                title: 'Highway 27',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow7 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    '27 has no shoulders, lots of traffic, and poor visibility - not good for bicycles.')
+            });
+
+            marker7.addListener('click', function () {
+                infowindow7.open(map, marker7);
+            });
+
+            // Lower Choctaw Boundary
+            var marker8 = new google.maps.Marker({
+                position: {
+                    lat: 32.147850,
+                    lng: -90.724840
+                },
+                map: map,
+                title: 'Lower Choctaw Boundary',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow8 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'There is a pullout with a sign here that says something about Choctaw Indians. People sometimes stop and read the sign. ...moving right along.'
+                )
+            });
+
+            marker8.addListener('click', function () {
+                infowindow8.open(map, marker8);
+            });
+
+            // Big Sand Creek Trail Marker
+            var marker9 = new google.maps.Marker({
+                position: {
+                    lat: 32.129957,
+                    lng: -90.745468
+                },
+                map: map,
+                title: 'Big Sand Creek Trail',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow9 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Here is a short walking trail ending at Big Sand Creek, a very peaceful place to stretch your legs and have a snack.'
+                )
+            });
+
+            marker9.addListener('click', function () {
+                infowindow9.open(map, marker9);
+            });
+
+            // Rocky Springs Marker
+            var marker10 = new google.maps.Marker({
+                position: {
+                    lat: 32.086399,
+                    lng: -90.798741
+                },
+                map: map,
+                title: 'Rocky Springs',
+                animation: google.maps.Animation.DROP
+            });
+
+            var infowindow10 = new google.maps.InfoWindow({
+                content: infowincontent.replace('CONTENT',
+                    'Rocky Springs has running water, toilets, and hiking trails. It is quite popular with RV campers, tent campers, and day hikers.'
+                )
+            });
+
+            marker10.addListener('click', function () {
+                infowindow10.open(map, marker10);
+            });
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            // captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+        $(document).ready(function () {
+
+            $('#content_opening').hide();
+            $('#click_opening').click(function () {
+                $('#content_opening').toggle();
+            });
+            $('.closed').click(function(){
+                $('#content_opening').hide();
+            })
+
+            $('.slider').slick({
+                centerMode: true,
+                slidesToShow: 3
+            });
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function () {
+                $(this)
+                    .siblings(".panel-heading")
+                    .find(".fa")
+                    .addClass("rotate");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on("show.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .addClass("rotate");
+            }).on("hide.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .removeClass("rotate");
+            });
+
+            $("#datepicker").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkin').click(function () {
+                $("#datepicker").focus();
+            });
+
+            $("#datepicker_checkout").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkout').click(function () {
+                $("#datepicker_checkout").focus();
+            });
+
+            $("#datepicker_checkin_event").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkin_event').click(function () {
+                $("#datepicker_checkin_event").focus();
+            });
+
+            $("#datepicker_checkout_event").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkout_event').click(function () {
+                $("#datepicker_checkout_event").focus();
+            });
+        });
+    </script>
+    <!-- JS Plugin-->
+
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- datepicker js -->
+    <script type="text/javascript" src="../../assets/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- datatable js-->
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/dataTables.bootstrap.min.js"></script>
+
+    <!-- owl.carousel.min js -->
+    <script type="text/javascript" src="../../assets/js/owl.carousel.min.js"></script>
+
+    <!-- bxslider js -->
+    <script type="text/javascript" src="../../assets/js/jquery.bxslider.js"></script>
+
+    <!-- Slider Js -->
+    <script type="text/javascript" src="../../assets/js/revolution-slider.js"></script>
+
+    <!-- megamenu js -->
+    <script type="text/javascript" src="../../assets/js/megamenu.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var mega_menu = '0';
+
+        /* ]]> */
+    </script>
+
+    <!-- jquery.mobile-menu js -->
+    <script type="text/javascript" src="../../assets/js/mobile-menu.js"></script>
+
+    <!--jquery-ui.min js -->
+    <script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
+
+    <!-- main js -->
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+
+    <!-- countdown js -->
+    <script type="text/javascript" src="../../assets/js/countdown.js"></script>
+
+    <!-- slick slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

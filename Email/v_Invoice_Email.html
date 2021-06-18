@@ -1,0 +1,537 @@
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+    html {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #4f4f4f;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+
+    .h1,
+    h1 {
+        font-size: 36px
+    }
+
+    .h2,
+    h2 {
+        font-size: 30px
+    }
+
+    .h3,
+    h3 {
+        font-size: 24px
+    }
+
+    .h4,
+    h4 {
+        font-size: 18px
+    }
+
+    .h5,
+    h5 {
+        font-size: 14px
+    }
+
+    .h6,
+    h6 {
+        font-size: 12px
+    }
+
+    button,
+    input {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        margin: 2em 14em;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .ml-auto {
+        margin-left: auto;
+    }
+
+    .ml-1 {
+        margin-left: 10px;
+    }
+
+    .ml-2 {
+        margin-left: 20px;
+    }
+
+    .mr-1 {
+        margin-right: 10px;
+    }
+
+    .mr-2 {
+        margin-right: 20px;
+    }
+
+    .fw-6 {
+        font-weight: 600;
+    }
+
+    .w-10 {
+        width: 10%;
+    }
+
+    .w-20 {
+        width: 20%
+    }
+
+    .w-25 {
+        width: 25%;
+    }
+
+    .w-30 {
+        width: 30%;
+    }
+
+    .w-45 {
+        width: 45%;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .w-90{
+        width: 90%;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .mtb-auto{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .box1 {
+        background: #F2F2F2;
+        max-width: 100%;
+        padding: 15px 30px;
+        max-height: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+    }
+
+    .font-12 {
+        font-size: 12px !important;
+    }
+
+    .font-11 {
+        font-size: 11px !important;
+    }
+
+    .font-10 {
+        font-size: 10px !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .bg-gray {
+        background: #F2F2F2;
+    }
+
+    .text-orange {
+        color: #F2994A;
+    }
+
+    .text-main {
+        color: #219653;
+        font-weight: 500;
+    }
+
+    .text-muted {
+        color: #828282;
+    }
+
+    .text-gray {
+        color: #c0c0c0;
+    }
+
+    .mb-1 {
+        margin-bottom: 10px;
+    }
+
+    .mb-2 {
+        margin-bottom: 20px;
+    }
+
+    .mb-3 {
+        margin-bottom: 30px;
+    }
+
+    .mt-1 {
+        margin-top: 10px;
+    }
+
+    .mt-2 {
+        margin-top: 20px;
+    }
+
+    .mt-3 {
+        margin-top: 30px;
+    }
+
+    .mt-4 {
+        margin-top: 40px;
+    }
+
+    .mt-5 {
+        margin-top: 50px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px
+    }
+
+    .btn.active.focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn:active:focus,
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px
+    }
+
+    .btn.focus,
+    .btn:focus,
+    .btn:hover {
+        color: #333;
+        text-decoration: none
+    }
+
+    .btn.active,
+    .btn:active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+    }
+
+    .btn.disabled,
+    .btn[disabled],
+    fieldset[disabled] .btn {
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .65
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%
+    }
+
+    .btn-block+.btn-block {
+        margin-top: 5px
+    }
+
+    .btn-group-sm>.btn,
+    .btn-sm {
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px
+    }
+
+    .btn-outline-green {
+        color: #219653;
+        background-color: #FFF;
+        border-color: #219653;
+    }
+
+    .btn-outline-green.focus,
+    .btn-outline-green:focus {
+        color: #219653;
+        background-color: rgb(237, 237, 237);
+        border-color: #219653;
+    }
+
+    .btn-outline-green:hover {
+        color: #219653;
+        background-color: rgb(237, 237, 237);
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-outline-green.active,
+    .btn-outline-green:active,
+    .open>.dropdown-toggle.btn-outline-green {
+        color: #219653;
+        background-color: rgb(237, 237, 237);
+        border-color: #219653;
+    }
+
+    .btn-outline-green.active.focus,
+    .btn-outline-green.active:focus,
+    .btn-outline-green.active:hover,
+    .btn-outline-green:active.focus,
+    .btn-outline-green:active:focus,
+    .btn-outline-green:active:hover,
+    .open>.dropdown-toggle.btn-outline-green.focus,
+    .open>.dropdown-toggle.btn-outline-green:focus,
+    .open>.dropdown-toggle.btn-outline-green:hover {
+        color: #219653;
+        background-color: rgb(237, 237, 237);
+        border-color: #219653;
+    }
+
+    .btn-green {
+        color: #fff;
+        background-color: #219653;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-green.focus,
+    .btn-green:focus {
+        color: #fff;
+        background-color: #219653;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-green:hover {
+        color: #fff;
+        background-color: #123f12;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-green.active,
+    .btn-green:active,
+    .open>.dropdown-toggle.btn-green {
+        color: #fff;
+        background-color: #219653;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-green.active.focus,
+    .btn-green.active:focus,
+    .btn-green.active:hover,
+    .btn-green:active.focus,
+    .btn-green:active:focus,
+    .btn-green:active:hover,
+    .open>.dropdown-toggle.btn-green.focus,
+    .open>.dropdown-toggle.btn-green:focus,
+    .open>.dropdown-toggle.btn-green:hover {
+        color: #fff;
+        background-color: #123f12;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    /* ICON */
+    .icon-location-2 {
+        content: url("data:image/svg+xml,%3Csvg viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 0C7.66484 0 3 4.66484 3 10.5C3 12.518 3.60156 14.0766 4.64609 15.657L12.3953 27.4148C12.6305 27.7703 13.0352 28 13.5 28C13.9648 28 14.375 27.7648 14.6047 27.4148L22.3539 15.657C23.3984 14.0766 24 12.518 24 10.5C24 4.66484 19.3352 0 13.5 0ZM13.5 16.3297C10.2789 16.3297 7.66484 13.7156 7.66484 10.4891C7.66484 7.2625 10.2789 4.64844 13.5 4.64844C16.7211 4.64844 19.3352 7.2625 19.3352 10.4891C19.3352 13.7156 16.7211 16.3297 13.5 16.3297ZM13.5 7C11.5641 7 10 8.56406 10 10.5C10 12.4359 11.5641 14 13.5 14C15.4359 14 17 12.4359 17 10.5C17 8.56406 15.4359 7 13.5 7Z' fill='%23E0E0E0'/%3E%3Cpath d='M10 10.5C10 8.56406 11.5641 7 13.5 7C15.4359 7 17 8.56406 17 10.5C17 12.4359 15.4359 14 13.5 14C11.5641 14 10 12.4359 10 10.5Z' fill='%23BDBDBD'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 25px !important;
+    }
+
+    .icon-location-cl {
+        content: url("data:image/svg+xml,%3Csvg viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 0C7.66484 0 3 4.66484 3 10.5C3 12.518 3.60156 14.0766 4.64609 15.657L12.3953 27.4148C12.6305 27.7703 13.0352 28 13.5 28C13.9648 28 14.375 27.7648 14.6047 27.4148L22.3539 15.657C23.3984 14.0766 24 12.518 24 10.5C24 4.66484 19.3352 0 13.5 0ZM13.5 16.3297C10.2789 16.3297 7.66484 13.7156 7.66484 10.4891C7.66484 7.2625 10.2789 4.64844 13.5 4.64844C16.7211 4.64844 19.3352 7.2625 19.3352 10.4891C19.3352 13.7156 16.7211 16.3297 13.5 16.3297ZM13.5 7C11.5641 7 10 8.56406 10 10.5C10 12.4359 11.5641 14 13.5 14C15.4359 14 17 12.4359 17 10.5C17 8.56406 15.4359 7 13.5 7Z' fill='%2327AE60'/%3E%3Cpath d='M10 10.5C10 8.56406 11.5641 7 13.5 7C15.4359 7 17 8.56406 17 10.5C17 12.4359 15.4359 14 13.5 14C11.5641 14 10 12.4359 10 10.5Z' fill='%2327AE60'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 25px !important;
+    }
+
+    .fb-button {
+        content: url("data:image/svg+xml, %3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23219653'/%3E%3Cpath d='M33.2031 12.9531H13.7969C13.3302 12.9531 12.9531 13.3302 12.9531 13.7969V33.2031C12.9531 33.6698 13.3302 34.0469 13.7969 34.0469H33.2031C33.6698 34.0469 34.0469 33.6698 34.0469 33.2031V13.7969C34.0469 13.3302 33.6698 12.9531 33.2031 12.9531ZM30.7668 19.1099H29.0819C27.7609 19.1099 27.5052 19.7374 27.5052 20.6603V22.6932H30.6587L30.2474 25.8757H27.5052V34.0469H24.2172V25.8783H21.4671V22.6932H24.2172V20.3465C24.2172 17.6228 25.881 16.1383 28.312 16.1383C29.4774 16.1383 30.4768 16.2253 30.7694 16.2648V19.1099H30.7668Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 30px !important;
+    }
+
+
+    .ig-button {
+        content: url("data:image/svg+xml, %3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23219653'/%3E%3Cpath d='M35.1836 19.3812C35.171 18.4345 34.9938 17.4972 34.6598 16.6112C34.3703 15.8639 33.928 15.1852 33.3613 14.6185C32.7946 14.0518 32.1159 13.6095 31.3686 13.32C30.494 12.9917 29.5701 12.8142 28.6361 12.795C27.4336 12.7412 27.0523 12.7262 23.9998 12.7262C20.9473 12.7262 20.5561 12.7262 19.3623 12.795C18.4288 12.8143 17.5053 12.9918 16.6311 13.32C15.8837 13.6093 15.2049 14.0515 14.6381 14.6183C14.0714 15.185 13.6292 15.8638 13.3398 16.6112C13.0109 17.4851 12.8337 18.4089 12.8161 19.3425C12.7623 20.5462 12.7461 20.9275 12.7461 23.98C12.7461 27.0325 12.7461 27.4225 12.8161 28.6175C12.8348 29.5525 13.0111 30.475 13.3398 31.3512C13.6297 32.0984 14.0722 32.777 14.6391 33.3434C15.2061 33.9099 15.8849 34.352 16.6323 34.6412C17.5041 34.9827 18.4278 35.173 19.3636 35.2037C20.5673 35.2575 20.9486 35.2737 24.0011 35.2737C27.0536 35.2737 27.4448 35.2737 28.6386 35.2037C29.5725 35.1853 30.4965 35.0082 31.3711 34.68C32.1182 34.3901 32.7967 33.9477 33.3634 33.381C33.9301 32.8144 34.3724 32.1358 34.6623 31.3887C34.9911 30.5137 35.1673 29.5912 35.1861 28.655C35.2398 27.4525 35.2561 27.0712 35.2561 24.0175C35.2536 20.965 35.2536 20.5775 35.1836 19.3812ZM23.9923 29.7525C20.7998 29.7525 18.2136 27.1662 18.2136 23.9737C18.2136 20.7812 20.7998 18.195 23.9923 18.195C25.525 18.195 26.9948 18.8038 28.0785 19.8875C29.1623 20.9713 29.7711 22.4411 29.7711 23.9737C29.7711 25.5063 29.1623 26.9762 28.0785 28.0599C26.9948 29.1436 25.525 29.7525 23.9923 29.7525ZM30.0011 19.3287C29.2548 19.3287 28.6536 18.7262 28.6536 17.9812C28.6536 17.8044 28.6884 17.6292 28.7561 17.4658C28.8238 17.3024 28.923 17.1539 29.0481 17.0288C29.1732 16.9038 29.3216 16.8046 29.485 16.7369C29.6485 16.6692 29.8236 16.6344 30.0005 16.6344C30.1773 16.6344 30.3525 16.6692 30.5159 16.7369C30.6793 16.8046 30.8278 16.9038 30.9529 17.0288C31.0779 17.1539 31.1771 17.3024 31.2448 17.4658C31.3125 17.6292 31.3473 17.8044 31.3473 17.9812C31.3473 18.7262 30.7448 19.3287 30.0011 19.3287Z' fill='white'/%3E%3Cpath d='M23.992 27.7275C26.0652 27.7275 27.7458 26.0469 27.7458 23.9738C27.7458 21.9006 26.0652 20.22 23.992 20.22C21.9189 20.22 20.2383 21.9006 20.2383 23.9738C20.2383 26.0469 21.9189 27.7275 23.992 27.7275Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 30px !important;
+    }
+
+    .yt-button {
+        content: url("data:image/svg+xml, %3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23219653'/%3E%3Cpath d='M24 14.76C12.2064 14.76 12 15.8088 12 24C12 32.1912 12.2064 33.24 24 33.24C35.7936 33.24 36 32.1912 36 24C36 15.8088 35.7936 14.76 24 14.76ZM27.846 24.4008L22.458 26.916C21.9864 27.1344 21.6 26.8896 21.6 26.3688V21.6312C21.6 21.1116 21.9864 20.8656 22.458 21.084L27.846 23.5992C28.3176 23.82 28.3176 24.18 27.846 24.4008Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 30px !important;
+    }
+
+    .tw-button {
+        content: url("data:image/svg+xml, %3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23219653'/%3E%3Cpath d='M36.6128 16.3484C35.7082 16.7493 34.7365 17.0201 33.7149 17.1425C34.769 16.5118 35.5576 15.5191 35.9336 14.3497C34.9432 14.9379 33.8594 15.352 32.7291 15.5738C31.969 14.7623 30.9622 14.2244 29.8651 14.0436C28.768 13.8628 27.6418 14.0494 26.6616 14.5742C25.6813 15.099 24.9017 15.9328 24.4439 16.9461C23.9861 17.9594 23.8756 19.0955 24.1296 20.178C22.1229 20.0772 20.1598 19.5557 18.3678 18.6471C16.5757 17.7386 14.9947 16.4634 13.7274 14.9043C13.2941 15.6518 13.0449 16.5185 13.0449 17.4415C13.0444 18.2724 13.249 19.0906 13.6406 19.8235C14.0322 20.5563 14.5986 21.1812 15.2896 21.6427C14.4882 21.6172 13.7045 21.4006 13.0037 21.0111V21.0761C13.0037 22.2415 13.4068 23.371 14.1447 24.273C14.8826 25.175 15.9099 25.7939 17.0521 26.0248C16.3087 26.2259 15.5293 26.2556 14.7728 26.1114C15.0951 27.1142 15.7229 27.991 16.5683 28.6193C17.4137 29.2475 18.4344 29.5956 19.4875 29.6149C17.6998 31.0183 15.492 31.7795 13.2193 31.7762C12.8167 31.7763 12.4145 31.7528 12.0146 31.7058C14.3216 33.189 17.007 33.9762 19.7496 33.9732C29.0338 33.9732 34.1092 26.2837 34.1092 19.6147C34.1092 19.398 34.1038 19.1792 34.0941 18.9625C35.0813 18.2486 35.9335 17.3645 36.6106 16.3517L36.6128 16.3484Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 30px !important;
+    }
+</style>
+
+<body>
+    <div class="d-flex">
+        <img src="../assets/images/new_img/Group 1227.png" style="width:25%" class="ml-auto mb-2">
+    </div>
+    <h6 class="mb-1 mt-2">Halo <span class="fw-6">Fadhli Yanuar,</span></h6>
+    <h6 class="mb-1">Menunggu pembayaran dengan BNI Virtual Account sebelum rabu, 05 Mei 2021, 17:51 WIB</h6>
+    <h6>Segera lakukan pembayaran berikut</h6>
+    <div class="box1 mt-2 mb-2">
+        <div class="d-flex mb-2">
+            <div class="w-25">
+                <h6>Total Bayar</h6>
+            </div>
+            <div class="w-50">
+                <h6 class="text-orange">Rp. 300.000</h6>
+            </div>
+        </div>
+        <div class="d-flex mb-2">
+            <div class="w-25">
+                <h6>Metode Pembayaran</h6>
+            </div>
+            <div class="w-10">
+                <img src="../assets/images/bank/bni.png" class="w-40">
+            </div>
+            <div class="w-30">
+                <h6>BNI Virtual Account</h6>
+            </div>
+        </div>
+        <div class="d-flex mb-2">
+            <div class="w-25">
+                <h6>Kode Virtual Account</h6>
+            </div>
+            <div class="w-50">
+                <h6>9393939339939</h6>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex w-100 mb-2">
+        <button class="btn btn-sm btn-outline-green w-45">Cek Status Pemesanan</button>
+        <button class="btn btn-sm btn-green w-45 ml-auto">Lihat Cara Bayar</button>
+    </div>
+    <h5 class="fw-6 mb-1">Ringkasan Pembayaran</h5>
+    <div class="d-flex mb-1">
+        <div class="w-50">
+            <h6>Total Harga (1 Barang)</h6>
+        </div>
+        <div class="w-50 text-right">
+            <h6>Rp. 200.000</h6>
+        </div>
+    </div>
+    <div class="d-flex mb-1">
+        <div class="w-50">
+            <h6>Total Ongkos Kirim</h6>
+        </div>
+        <div class="w-50 text-right">
+            <h6>Rp. 10.000</h6>
+        </div>
+    </div>
+    <div class="d-flex mb-1">
+        <div class="w-50">
+            <input type="checkbox"><span class="font-12 ml-1">Asuransi Pengiriman</span>
+        </div>
+        <div class="w-50 text-right">
+            <h6>Rp. -</h6>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex mb-1">
+        <div class="w-50">
+            <h6 class="fw-6">Total Tagihan</h6>
+        </div>
+        <div class="w-50 text-right">
+            <h6 class="text-orange fw-6">Rp. 210.000</h6>
+        </div>
+    </div>
+    <h5 class="fw-6 mb-1 mt-3">Rincian Pesanan</h5>
+    <h6 class="mb-2">No Invoice : <span class="text-main font-12 ml-1">INV/49343434398493493</span></h6>
+
+    <h6 class="fw-6 mb-1">KBM MRanggu</h6>
+    <h6 class="font-10 mb-1 text-muted">Jl. Semarang - Purwodadi No.KM.15, Tegalan, Brumbung, Kec. Mranggen, Kabupaten
+        Demak, Jawa Tengah 59567</h6>
+
+    <div class="d-flex mb-1">
+        <div>
+            <img src="../assets/images/new_img/Rectangle 1474-1.png" style="width: 60%">
+        </div>
+        <div class="ml-1">
+            <h6 class="fw-6 mb-1 mt-1">Minyak Kayu Putih</h6>
+            <p class="font-10 text-muted">20 Kg</p>
+            <h5 class="fw-6 text-orange mt-1">Rp. 300.000 <span class="text-gray ml-1"> (2x Rp 150.000)</span></h5>
+        </div>
+    </div>
+
+    <div class="d-flex mb-1">
+        <i class="icon-location-cl"></i>
+        <div class="ml-1 mt-1">
+            <p class="font-10 text-muted mb-1">Tujuan Pengiriman</p>
+            <h6 class="text-main">
+                Jl. TB Simatupang No.22, RT.1/RW.8, Jati Padang, Kec. Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus
+                Ibukota Jakarta 12540
+            </h6>
+        </div>
+    </div>
+
+    <h6 class="mt-4">Email ini dibuat otomatis, mohon tidak membalas. Jika butuh bantuan Kontak di bawah </h6>
+
+    <div class="d-flex mt-3">
+        <div class="mtb-auto">
+            <i class="ig-button"></i><i class="fb-button ml-1"></i><i class="tw-button ml-1"></i><i
+                class="yt-button ml-1"></i>
+        </div>
+        <div class="ml-auto">
+            <p class="font-11 mb-1 text-muted">Download Aplikasi Perhutani</p>
+            <img src="../assets/images/new_img/available-on-google-play-png-8 1.png" class="w-90">
+        </div>
+    </div>
+    <hr class="mt-3 mb-2">
+    <h6 class="text-center">Copyright 2021 Toko Perhutani, All rights reserved.</h6>
+
+</body>
+
+</html>

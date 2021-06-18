@@ -1,0 +1,307 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+:root {
+    --blackPrimary: #4F4F4F;
+    --secondary: #ffffff;
+    --secondary2:#F2F2F2;
+    --greenPrimary: #219653;
+  }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body{
+    font-family: poppins;
+}
+
+header{
+    padding: 28px 90px 28px 90px; 
+    background: linear-gradient(270deg, #219653 0%, #40815C 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-menu img{
+    width: 29px;
+    margin-right: 32px;
+}
+
+.header-menu span{
+    margin-left: 63px ;
+    margin-right: 21px ;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header-menu :last-child :last-child{
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(79, 79, 79, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 880px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    padding: 60px 62px 47px 62px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer {
+    align-self: center;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.modal-footer a{
+    text-decoration: none;
+    color: var(--greenPrimary);
+    font-weight: 700;
+}
+
+.modal-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 22px;
+    color: var(--blackPrimary);
+}
+
+.modal-title a{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 36px;
+}
+
+.modal-input{
+    margin-top:12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.modal-input :first-child{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--blackPrimary);
+}
+
+.modal-input input{
+    border-radius: 8px;
+    background: var(--secondary2);
+    padding: 20px;
+    border: none;
+    outline: none;
+    margin-top: 6px;
+    font-size: 24px;
+}
+
+.modal-input select{
+    border-radius: 8px;
+    background: var(--secondary2);
+    padding: 20px;
+    border: none;
+    outline: none;
+    margin-top: 6px;
+    font-size: 24px;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+.negara{
+    position: relative;
+    
+
+}
+
+.remember-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.remember-me a{
+    text-decoration: none;
+    color: var(--greenPrimary);
+    
+}
+
+.check-box{
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.check-box input{
+    margin-right: 8px;
+}
+
+.check-box span{
+    text-decoration: none;
+    color: var(--blackPrimary);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.modal-btn{
+    margin-top: 50px;
+    padding: 22px 0px 22px 0px;
+    display: flex;
+    justify-content: center;
+    background: var(--greenPrimary);
+    color: var(--secondary);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    border:none;
+    cursor: pointer;
+}
+
