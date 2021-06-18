@@ -3764,6 +3764,13 @@ select.dropdown-small-retail {
     margin-right: 22px;
 }
 
+.pos-drop2 {
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+    margin-right: 35em;
+}
+
 .chosen-container-multi .chosen-choices li.search-choice {
     background: var(--main) !important;
     color: var(--white) !important;
