@@ -5,14 +5,14 @@
     <!-- Basic page needs -->
     <meta charset="utf-8">
     <!--[if IE]>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <![endif]-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Toko Perhutani</title>
     <!-- <meta
-    name="Before buying it, get the feel and look of the Refresh Food & Restaurant Website Template by viewing the demo preview. View the pages, examine the images, click the buttons, explore the features.">
-  <meta name="keywords"
-    content="food shop, fresh, modern, Refresh farm, Restaurant farm shop, Refresh food, Refresh shop, agriculture, e-commerce, eco, eco products, farm, farming, food, health, Restaurant, Refresh food, retail, shop, store" /> -->
+        name="Before buying it, get the feel and look of the Refresh Food & Restaurant Website Template by viewing the demo preview. View the pages, examine the images, click the buttons, explore the features.">
+      <meta name="keywords"
+        content="food shop, fresh, modern, Refresh farm, Restaurant farm shop, Refresh food, Refresh shop, agriculture, e-commerce, eco, eco products, farm, farming, food, health, Restaurant, Refresh food, retail, shop, store" /> -->
 
     <!-- Mobile specific metas  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,8 +58,12 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/css/apps.css" media="all">
 
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
+
     <!-- jquery js -->
     <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+
 </head>
 <!-- End Plugin -->
 
@@ -218,7 +222,6 @@
             </div>
         </nav>
         <!-- end nav -->
-
         <div class="container container-row">
             <div class="breadcrumbs">
                 <div class="container container-row">
@@ -235,153 +238,156 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="form_holder">
                 <form id="msform">
                     <ul id="progressbar_reg" class="mg-0">
                         <li class="active">Form Permohonan Kontrak Khusus</li>
-                        <li>Permohonan Harga Permintaan Kontrak</li>
-                        <li>Kontak Khusus Aktif</li>
+                        <li class="active">Permohonan Harga Permintaan Kontrak</li>
+                        <li class="active">Kontak Khusus Aktif</li>
                     </ul>
                     <fieldset style="margin: 0px 0%">
                         <div style="padding:1em 3em;">
                             <div class="box-card1 mt-2 mb-4 bg-white">
-                                <div class="box-header text-left">
-                                    <h5 class="font-weight-bold ml-2">Form Permohonan Kayu</h5>
-                                    <p class="font-12 text-muted1 ml-2">Permohonan Kayu untuk Kontrak Reguler</p>
+                                <div class="box-header text-left d-flex">
+                                    <div>
+                                        <h5 class="font-weight-bold ml-2">Penawaran Harga Kontrak Khusus</h5>
+                                        <p class="font-12 text-muted1 ml-2">Feedback GM Terkait Permintaan Kontrak</p>
+                                    </div>
+                                    <h6 class="v-middle ml-auto mr-2"><i class="icon-sort mr-1" id="click_sort"
+                                            style="cursor: pointer;"></i><span
+                                            class="font-weight-bold font-14">Sort</span></h6>
                                 </div>
-                                <div class="box-body text-left font-11" style="margin: 10px 3em;">
-                                    <div class="mt-2">
-                                        <label class="text-muted">Jenis Kayu</label>
-                                        <select class="input-custom form-control font-11" id="payment">
-                                            <option>Pilih Jenis Kayu</option>
-                                        </select>
+                                <div id="content_sort">
+                                    <div class="header-row">
+                                        <h5 class="font-weight-bold text-left" style="margin-left:10px; margin-top:5px;">Sorting</h5>
                                     </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Mutu Kayu</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">UT</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">P</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">D</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">T</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">M</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">L</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">KBP</span>
-                                            </div>
+                                    <div style="padding: 3px 12px;" class="text-left">
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox1"><span class="ml-1 text-black1"
+                                                id="text1">Masa Aktif
+                                                Kontrak</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox2"><span
+                                                class="ml-1 text-black1">Berakhir
+                                                Kontrak</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox3"><span
+                                                class="ml-1 text-black1">Sortimen</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox4"><span
+                                                class="ml-1 text-black1">Dif</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox5"><span
+                                                class="ml-1 text-black1">Tahun
+                                                tebangan</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox6"><span
+                                                class="ml-1 text-black1">Nomor
+                                                Kapling</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <input type="checkbox" class="checkbox-sm" id="checkbox7"><span
+                                                class="ml-1 text-black1">Invoice</span>
                                         </div>
                                     </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Ukuran Kayu</label>
-                                        <input type="text" class="input-custom form-control font-11" name=""
-                                            placeholder="Tulis Ukuran Kayu">
+                                    <div class="text-center mt-1 mb-1">
+                                        <button class="btn btn-sm btn-green" id="btn_pilih">Pilih</button>
                                     </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Location</label>
-                                        <select class="input-custom form-control font-11 mb-2">
-                                            <option>Central Java</option>
-                                        </select>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Sortimen</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AI</span>
+                                </div>
+                                <div class="box-body text-left font-11" style="margin: 10px 1em;">
+                                    <div class="box-card1 bg-gray4" style="padding: 25px;">
+                                        <h5 class="font-weight-bold">Kayu Jati</h5>
+                                        <div class="d-flex">
+                                            <div class="d-flex">
+                                                <i class="icon-location-cl-2"></i>
+                                                <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
+                                                    Banten</h6>
                                             </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AII</span>
+                                            <div class="d-flex ml-2">
+                                                <i class="doc_icon_green_2"></i>
+                                                <h6 class="font-11 text-main v-middle">Kontrak Aktif</h6>
                                             </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AIII</span>
-                                            </div>
+                                            <button class="btn btn-sm btn-circle-green ml-auto">Lihat Detail</button>
+
                                         </div>
-                                        <input type="text" class="input-custom form-control font-11 mt-2" name=""
-                                            placeholder="Tambah Catatan">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Jumlah Volume</label>
-                                        <input type="text" class="input-custom form-control font-11" name=""
-                                            placeholder="Jumlah volume akan terisi secara otomatis">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Status</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Lokal</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Industri</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Hara</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Vinir</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Status Tebangan</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan A</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan B</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan C</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan D</span>
-                                            </div>
+                                        <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
+                                            <span>9182649162491826491</span>
+                                        </h6>
+                                        <div class="radius-table border-table mt-2">
+                                            <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="w-30">Sortimen</th>
+                                                        <th>Mutu</th>
+                                                        <th>Volume</th>
+                                                        <th class="w-20">Mulai</th>
+                                                        <th class="w-20">Berakhir</th>
+                                                        <!-- <th>Action</th> -->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">KBM Mranggu</td>
+                                                        <td class="text-center">500 Ton</td>
+                                                        <td class="text-right text-muted1">Rp 232.0239.000</td>
+                                                        <td class="text-center text-muted1">Non Retail</td>
+                                                        <td class="text-center text-muted1">Non Retail</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    <div class="row mt-2">
-                                        <div class="col-sm-6">
-                                            <label class="text-muted">Tanggal Mulai</label>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="tgl"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="bulan"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="thn"></select>
-                                                </div>
+                                    <div class="box-card1 bg-gray4" style="padding: 25px;">
+                                        <h5 class="font-weight-bold">Kayu Jati</h5>
+                                        <div class="d-flex">
+                                            <div class="d-flex">
+                                                <i class="icon-location-cl-2"></i>
+                                                <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
+                                                    Banten</h6>
                                             </div>
+                                            <div class="d-flex ml-2">
+                                                <i class="doc_icon_green_2"></i>
+                                                <h6 class="font-11 text-main v-middle">Kontrak Aktif</h6>
+                                            </div>
+                                            <button class="btn btn-sm btn-circle-green ml-auto">Lihat Detail</button>
+
                                         </div>
-                                        <div class="col-sm-6">
-                                            <label class="text-muted">Tanggal Akhir</label>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="tgl_2"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="bulan_2"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="thn_2"></select>
-                                                </div>
-                                            </div>
+                                        <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
+                                            <span>9182649162491826491</span>
+                                        </h6>
+                                        <div class="radius-table border-table mt-2">
+                                            <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="w-30">Sortimen</th>
+                                                        <th>Mutu</th>
+                                                        <th>Volume</th>
+                                                        <th class="w-20">Mulai</th>
+                                                        <th class="w-20">Berakhir</th>
+                                                        <!-- <th>Action</th> -->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">KBM Mranggu</td>
+                                                        <td class="text-center">500 Ton</td>
+                                                        <td class="text-right text-muted1">Rp 232.0239.000</td>
+                                                        <td class="text-center text-muted1">Non Retail</td>
+                                                        <td class="text-center text-muted1">Non Retail</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    <div class="item-center mt-3">
-                                        <button type="button" class="btn btn-green btn-sm" style="font-size: 15px;" id="btnSubmit">KIRIM PERMINTAAN</button>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -465,7 +471,7 @@
     <div class="box-footer"></div>
     <a href="#" class="totop bg-dark"> </a>
 
-    
+
     <!-- JS Plugin-->
 
     <!-- bootstrap js -->
@@ -473,11 +479,6 @@
 
     <!-- datepicker js -->
     <script type="text/javascript" src="../assets/js/bootstrap-datepicker.min.js"></script>
-
-    <!-- datatable js-->
-    <script type="text/javascript" src="../assets/js/jquery.dataTables.min.js"></script>
-
-    <script type="text/javascript" src="../assets/js/dataTables.bootstrap.min.js"></script>
 
     <!-- owl.carousel.min js -->
     <script type="text/javascript" src="../assets/js/owl.carousel.min.js"></script>
@@ -506,52 +507,15 @@
     <!-- main js -->
     <script type="text/javascript" src="../assets/js/main.js"></script>
 
+    <!-- <script type="text/javascript" src="../assets/js/history.js"></script> -->
+
     <!-- countdown js -->
     <script type="text/javascript" src="../assets/js/countdown.js"></script>
-
     <script>
         $(document).ready(function () {
-            var angka_bln = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-            var tgl = '';
-            var bulan = '';
-            var tahun = '';
-            var i;
-            for (i = 1; i <= 31; i++) {
-                tgl += '<option>' + i + '</option>';
-            }
-            $('#tgl').html(tgl);
-            $('#tgl_2').html(tgl);
-
-            for (i = 0; i < angka_bln.length; i++) {
-                bulan += '<option>' + angka_bln[i] + '</option>';
-            }
-            $('#bulan').html(bulan);
-            $('#bulan_2').html(bulan);
-
-            for (i = 2021; i > 1999; i--) {
-                tahun += '<option>' + i + '</option>';
-            }
-            $('#thn').html(tahun);
-            $('#thn_2').html(tahun);
-
-            $("#datepicker_checkin_event").datepicker({
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd-mm-yyyy"
-            }).datepicker('update', new Date());
-
-            $('#click_checkin_event').click(function () {
-                $("#datepicker_checkin_event").focus();
-            });
-
-            $("#datepicker_checkout_event").datepicker({
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd-mm-yyyy"
-            }).datepicker('update', new Date());
-
-            $('#click_checkout_event').click(function () {
-                $("#datepicker_checkout_event").focus();
+            // $('.content').hide();
+            $('#click_sort').click(function () {
+                $('#content_sort').toggle();
             });
         });
     </script>

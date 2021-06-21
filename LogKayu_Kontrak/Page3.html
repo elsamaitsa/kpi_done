@@ -384,7 +384,7 @@
                     <h6 class="text-muted1">Jawa Timur</h6>
                 </div>
             </div>
-            
+
             <div id="mainMenuBarAnchor"></div>
             <div class="container container-row container-content" id="mainMenuBar">
                 <div class="card-content1">
@@ -461,18 +461,17 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 20%"></td>
-                                        <td style="height:15px; width: 30%"></td>
-                                        <td style="height:15px; width: 30%"></td>
-                                        <td style="height:15px; width: 30%"></td>
-                                        <td style="height:15px; width: 40%"></td>
-                                        <td style="height:15px; width: 40%"></td>
-                                        <td style="height:15px; width: 40%"></td>
+                                        <td><input type="text" class="form-custom1" id="id1" disabled></td>
+                                        <td><input type="text" class="form-custom1" id="id1" disabled></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
+                                        <td><input type="text" class="form-custom1"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -617,7 +616,25 @@
                 }
             });
             // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function () {
+                $(this)
+                    .siblings(".panel-heading")
+                    .find(".fa")
+                    .addClass("rotate");
+            });
 
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on("show.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .addClass("rotate");
+            }).on("hide.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .removeClass("rotate");
+            });
             $(".chosen-select").chosen({
                 no_results_text: "Tidak ditemukan"
             });
@@ -640,10 +657,8 @@
                 $('#tab_label').html(i + j);
             });
 
-
             $('input[name=radioknof]').on('click', function () {
-                $('#id1').prop('disabled', false).find('#id input[type=text]').prop('disabled', true);
-                // $('#id1').prop('disabled', false).find('input[type=text]').prop('disabled', true);
+                $('#id1').prop('disabled', false).find('input[type=text]').prop('disabled',true);
             });
         });
     </script>

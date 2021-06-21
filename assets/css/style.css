@@ -84,7 +84,7 @@
 ******************************************/
 
 body {
-	background: #fff;
+	background: #FCFCFC;
 	color: #39342e;
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
@@ -4698,7 +4698,8 @@ html {
 #page {
 	position: relative;
 	left: 0;
-	overflow: hidden
+	overflow: hidden;
+	background: #FCFCFC;
 }
 
 .mmPushBody {
@@ -10359,4 +10360,8 @@ input[type=checkbox] {
 	.nav-res-item {
 		font-size: 12px;
 	}
+}
+
+.m-10{
+	margin: 10px;
 }

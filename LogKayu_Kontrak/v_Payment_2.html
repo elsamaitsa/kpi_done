@@ -218,175 +218,95 @@
             </div>
         </nav>
         <!-- end nav -->
-
-        <div class="container container-row">
-            <div class="breadcrumbs">
-                <div class="container container-row">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li class="home"> <a href="#">Home</a> <span>/</span>
-                                </li>
-                                <li> <a href="#">Kategori</a> <span>/</span>
-                                </li>
-                                <li class="active">Log Kayu</li>
-                            </ul>
+        <div class="container container-row container-content">
+            <div style="padding:1em 7em;">
+                <div class="box mt-4 mb-4">
+                    <div class="box-header text-center">
+                        <h5 class="label-header-2">Selesaikan Pembayaran</h5>
+                        <!-- <div class="numbering v-middle">3</div> -->
+                    </div>
+                    <div class="box-body text-left" style="margin: 15px 4em">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <h6 class="font-weight-bold">Batas Akhir Pembayaran</h6>
+                            </div>
+                            <div class="col-sm-6 col-md-6 text-right">
+                                <h6 class="font-weight-bold text-main">Rabu, 3 Maret 2021 15:43</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-6 col-md-6">
+                                <h6 class="font-weight-bold">Virtual Account</h6>
+                            </div>
+                            <div class="col-sm-6 col-md-6 text-right">
+                                <img src="../assets/images/new_img/Finnet.svg">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-6 col-md-6">
+                                <p class="text-muted1 font-10 mb-0">Accounting</p>
+                                <h6 class="font-weight-bold">8888888888888888888</h6>
+                            </div>
+                            <div class="col-sm-6 col-md-6 text-right">
+                                <h6 class="font-weight-bold text-main">Salin</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-6 col-md-6">
+                                <p class="text-muted1 font-10 mb-0">Manual Transfer</p>
+                                <h6 class="font-weight-bold">Rp. 300.000</h6>
+                            </div>
+                            <div class="col-sm-6 col-md-6 text-right">
+                                <h6 class="font-weight-bold text-main" id="click_detail">Lihat Detail</h6>
+                            </div>
+                        </div>
+                        <div id="div_detail" style="display: none;">
+                            <div class="d-flex mt-1">
+                                <h6 class="font-10 font-weight-bold">Kayu Jati, <span class="text-muted1">TPK Glonggong (xl)</span></h6>
+                                <h6 class="font-10 text-muted ml-auto">Rp. 200.000</h6>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <h6 class="font-10 font-weight-bold">Kayu Pinus, <span class="text-muted1">TPK Glonggong (xl)</span></h6>
+                                <h6 class="font-10 text-muted ml-auto">Rp. 200.000</h6>
+                            </div>
+                            <hr style="margin: 10px 0px; border-top: 1px solid #E0E0E0;">
+                            <div class="d-flex">
+                                <h6 class="font-10 font-weight-bold">Total Tagihan</h6>
+                                <h6 class="font-10 text-orange ml-auto">Rp. 200.000</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="form_holder">
-                <form id="msform">
-                    <ul id="progressbar_reg" class="mg-0">
-                        <li class="active">Form Permohonan Kontrak Khusus</li>
-                        <li>Permohonan Harga Permintaan Kontrak</li>
-                        <li>Kontak Khusus Aktif</li>
-                    </ul>
-                    <fieldset style="margin: 0px 0%">
-                        <div style="padding:1em 3em;">
-                            <div class="box-card1 mt-2 mb-4 bg-white">
-                                <div class="box-header text-left">
-                                    <h5 class="font-weight-bold ml-2">Form Permohonan Kayu</h5>
-                                    <p class="font-12 text-muted1 ml-2">Permohonan Kayu untuk Kontrak Reguler</p>
+                <div class="mt-3 text-left">
+                    <h5 class="font-weight-bold mb-2">Panduan Pembayaran</h5>
+                    <div class="bs-example">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default panel-no-br">
+                                <div class="panel-heading panel-no-br">
+                                    <h4 class="panel-title font-weight-bold text-main">
+                                        Virtual Account Finnet<a data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseOne"><i
+                                                class="fa fa-angle-down float-right"></i></a>
+                                    </h4>
                                 </div>
-                                <div class="box-body text-left font-11" style="margin: 10px 3em;">
-                                    <div class="mt-2">
-                                        <label class="text-muted">Jenis Kayu</label>
-                                        <select class="input-custom form-control font-11" id="payment">
-                                            <option>Pilih Jenis Kayu</option>
-                                        </select>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Mutu Kayu</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">UT</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">P</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">D</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">T</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">M</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">L</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">KBP</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Ukuran Kayu</label>
-                                        <input type="text" class="input-custom form-control font-11" name=""
-                                            placeholder="Tulis Ukuran Kayu">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Location</label>
-                                        <select class="input-custom form-control font-11 mb-2">
-                                            <option>Central Java</option>
-                                        </select>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Sortimen</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AI</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AII</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">AIII</span>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="input-custom form-control font-11 mt-2" name=""
-                                            placeholder="Tambah Catatan">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Jumlah Volume</label>
-                                        <input type="text" class="input-custom form-control font-11" name=""
-                                            placeholder="Jumlah volume akan terisi secara otomatis">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Status</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Lokal</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Industri</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Hara</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Vinir</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="text-muted">Status Tebangan</label>
-                                        <div class="d-flex j-space-between">
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan A</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan B</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan C</span>
-                                            </div>
-                                            <div class="mr-1">
-                                                <input type="checkbox" class="checkbox-sm"><span class="ml-1">Tebangan D</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-sm-6">
-                                            <label class="text-muted">Tanggal Mulai</label>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="tgl"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="bulan"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="thn"></select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <label class="text-muted">Tanggal Akhir</label>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="tgl_2"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="bulan_2"></select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="input-custom form-control font-11" id="thn_2"></select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-center mt-3">
-                                        <button type="button" class="btn btn-green btn-sm" style="font-size: 15px;" id="btnSubmit">KIRIM PERMINTAAN</button>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body ">
+                                        <ol type="1" class="text-muted font-12">
+                                            <li>Masukkan kartu ATM dan PIN</li>
+                                            <li>Pilih menu "Bayar / Beli"</li>
+                                            <li>Pilih menu "Lainnya", hingga menemukan menu "Multipayment"</li>
+                                            <li>Masukkan kode biller "Finnet Indonesia, PT", lalu pilih Benar</li>
+                                            <li>Masukkan "Nomor Virtual Account", lalu pilih tombol Benar</li>
+                                            <li>Masukkan jumlah tagihan yang akan dibayarkan, lalu pilih lanjut</li>
+                                            <li>Akan muncul konfirmasi pembayaran, lalu pilih tombol Ya</li>
+                                            <li>Simpan struck sebagai struk bukti pembayaran anda</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -465,7 +385,30 @@
     <div class="box-footer"></div>
     <a href="#" class="totop bg-dark"> </a>
 
-    
+    <script>
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function () {
+                $(this)
+                    .siblings(".panel-heading")
+                    .find(".fa")
+                    .addClass("rotate");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on("show.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .addClass("rotate");
+            }).on("hide.bs.collapse", function () {
+                $(this)
+                    .parent()
+                    .find(".fa")
+                    .removeClass("rotate");
+            });
+        });
+    </script>
     <!-- JS Plugin-->
 
     <!-- bootstrap js -->
@@ -510,52 +453,12 @@
     <script type="text/javascript" src="../assets/js/countdown.js"></script>
 
     <script>
-        $(document).ready(function () {
-            var angka_bln = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-            var tgl = '';
-            var bulan = '';
-            var tahun = '';
-            var i;
-            for (i = 1; i <= 31; i++) {
-                tgl += '<option>' + i + '</option>';
-            }
-            $('#tgl').html(tgl);
-            $('#tgl_2').html(tgl);
-
-            for (i = 0; i < angka_bln.length; i++) {
-                bulan += '<option>' + angka_bln[i] + '</option>';
-            }
-            $('#bulan').html(bulan);
-            $('#bulan_2').html(bulan);
-
-            for (i = 2021; i > 1999; i--) {
-                tahun += '<option>' + i + '</option>';
-            }
-            $('#thn').html(tahun);
-            $('#thn_2').html(tahun);
-
-            $("#datepicker_checkin_event").datepicker({
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd-mm-yyyy"
-            }).datepicker('update', new Date());
-
-            $('#click_checkin_event').click(function () {
-                $("#datepicker_checkin_event").focus();
-            });
-
-            $("#datepicker_checkout_event").datepicker({
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd-mm-yyyy"
-            }).datepicker('update', new Date());
-
-            $('#click_checkout_event').click(function () {
-                $("#datepicker_checkout_event").focus();
-            });
+        $(document).ready(function(){
+            $('#click_detail').click(function(){
+                $('#div_detail').slideToggle( "slow" );;
+            })
         });
     </script>
-
 </body>
 
 </html>
