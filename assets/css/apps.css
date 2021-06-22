@@ -13,6 +13,7 @@
     --orange2: #CB7324;
     --greenlight: #AEECC8;
     --green: #108c44;
+    --purple2: #9B51E0;
 }
 
 .ml-0 {
@@ -1242,7 +1243,7 @@
     margin: 20px 0px;
 }
 
-.card-tab-retail {
+.card-retail {
     width: 100%;
     height: 55px;
     background: #fff;
@@ -5412,19 +5413,95 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb {
     box-shadow: 2px 12px 24px rgb(0 0 0 / 9%);
 }
 
-.table-cust thead td,
-.table-cust tbody td {
-    border: 1px solid #ddd;
-    padding: 2px;
+table.table-cust {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /* border-collapse: collapse; */
+    font-size: 12px;
+    border: 1px solid var(--main);
+  }
+  
+
+table .table-cust thead{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #F8F8F8;
+    /* height: 30px; */
 }
 
+table .table-cust tbody {
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+table.table-cust thead th:first-child:before {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    -webkit-border-radius: 5px 0px 0px;
+  }
+
+  table.table-cust thead td {
+    position: relative;
+    padding: 10px 15px;
+    /* line-height: 15px; */
+    vertical-align: bottom;
+    border-right: 1px solid #e0e0e0;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+
+  table.table-cust thead td:last-child:after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    -webkit-border-radius: 0px 5px 0px 0px;
+  }
+  
+  table.table-cust thead td:last-child {
+    border-right: none;
+  }
+
+
+  table.table-cust tbody td {
+    text-align: left;
+    padding: 5px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  table.table-cust tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  table.table-cust tbody td:last-child {
+    width: 30px;
+    border-right: none;
+  }
+
+  
 .card-scroll {
     background: #fff;
     border-radius: 8px;
-    overflow-x: auto;
+    /* overflow-x: scroll; */
     width: 100%;
-    overflow-y: auto;
-    height: 500px;
+    overflow-y: scroll;
+    height: 900px;
     padding: 15px 20px;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -5652,4 +5729,100 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb {
 .disabledDiv {
     pointer-events: none;
     opacity: 0.4;
+}
+
+.m-10{
+	margin: 10px;
+} 
+
+/*
+ *  STYLE 2
+ */
+
+ #style-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(177 177 177 / 30%);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#style-2::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+    height: 7px;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: var(--main);
+}
+
+.label-orange-2 {
+    color: var(--white);
+    font-size: 9px;
+    background: #F2994A;
+    max-height: 100%;
+    padding: 5px 8px;
+    border-radius: 10px;
+    max-width: 100%;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.label-purple {
+    color: var(--white);
+    font-size: 9px;
+    background: var(--purple2);
+    max-height: 100%;
+    padding: 5px 8px;
+    border-radius: 10px;
+    max-width: 100%;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* Style the tab */
+.tab_button_wil {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #ccc;
+    background-color: #f1f1f1; */
+}
+
+/* Style the buttons inside the tab */
+.tab_button_wil button {
+    background: #F2F2F2;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 100%;
+    margin: 0 8px;
+    border-radius: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab_button_wil button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab_button_wil button.active {
+    background-color: #f2f2f2;
+    color: #27AE60;
+    border: 1px solid #27AE60;
+
+}
+
+/* Style the tab content */
+.tabcontent_button_wil {
+    display: none;
+    padding: 6px 0px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
 }
