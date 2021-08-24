@@ -5937,3 +5937,11 @@ label.wrap-retail {
 .bg-gray4{
     background: var(--gray4);
 }
+
+.m-button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20em;
+    margin-right: 10px;
+    margin-left: 5em;
+}
