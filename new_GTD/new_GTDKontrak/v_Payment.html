@@ -18,36 +18,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon  -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo-perhutani.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo-perhutani.png">
 
     <!-- CSS Style -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
 
     <!-- font-awesome & simple line icons CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../assets/css/simple-line-icons.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/simple-line-icons.css" media="all">
 
     <!-- Datepicker CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datepicker3.css">
 
     <!-- owl.carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.transitions.css">
 
     <!-- animate CSS  -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css" media="all">
 
     <!-- flexslider CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/flexslider.css">
 
     <!-- jquery-ui.min CSS  -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
 
     <!-- Revolution Slider CSS -->
-    <link href="../assets/css/revolution-slider.css" rel="stylesheet">
+    <link href="../../assets/css/revolution-slider.css" rel="stylesheet">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,16 +55,11 @@
         rel="stylesheet">
 
     <!-- style CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../assets/css/apps.css" media="all">
-
-    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/apps.css" media="all">
 
     <!-- jquery js -->
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-
-
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
 </head>
 <!-- End Plugin -->
 
@@ -88,7 +83,6 @@
     </div>
     <!-- end mobile menu -->
     <div id="page">
-
         <!-- Header -->
         <header>
             <div class="header-container">
@@ -101,9 +95,14 @@
                             <!-- End Header Logo -->
                         </div>
                         <div class="col-md-6 col-sm-6 col-lg-4 col-xs-12 ml-maxright">
-                            <div class="row float-right" style="display:flex; position: relative;">
+                            <div class="row float-right" style="display:flex;">
+                                <!-- <div class="input-group" style="margin-right: 3px;">
+                                    <span class="input-group-addon custom-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
+                                    <input type="text" class="form-control custom-input" placeholder="Search" aria-describedby="basic-addon1">
+                                  </div> -->
+
                                 <!-- Keranjang Belanja -->
-                                <div id="toggle-keranjang" class="col-sm-1" style="margin:auto 0px auto auto;">
+                                <div class="col-sm-1" style="margin:auto 0px auto auto;">
                                     <div class="dropdown block-company-wrapper hidden-xs">
                                         <a role="button" data-toggle="dropdown" data-target="#"
                                             class="block-company dropdown-toggle icon-menu" href="#">
@@ -219,128 +218,91 @@
             </div>
         </nav>
         <!-- end nav -->
-
-        <div class="breadcrumbs">
-            <div class="container container-row">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <ul>
-                            <li class="home"> <a href="#">Home</a> <span>/</span>
-                            </li>
-                            <li> <a href="#" title="">Kategori</a> <span>/ </span> </li>
-                            <li class="active">Non Kayu</li>
-                        </ul>
+        <div class="container container-row container-content">
+            <div style="padding:1em 5em;">
+                <div class="box mt-4 mb-4">
+                    <div class="box-header text-center">
+                        <h5 class="label-header-2">Pilih Metode Pembayaran</h5>
+                        <!-- <div class="numbering v-middle">3</div> -->
+                    </div>
+                    <div class="box-body text-left" style="margin: 15px 4em">
+                        <h6 class="font-weight-bold mt-1 mb-1">Transfer Bank (Verfikasi Manual)</h6>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <img src="../../assets/images/new_img/Finnet.svg">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Finnet</h5>
+                            </div>
+                        </div>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <img src="../../assets/images/new_img/Bank Permata.svg">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Bank Permata</h5>
+                            </div>
+                        </div>
+                        <h6 class="font-weight-bold mt-2 mb-1">Transfer Bank (Verfikasi Manual)</h6>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <img src="../../assets/images/new_img/Mandiri.svg">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Bank Mandiri</h5>
+                            </div>
+                        </div>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <img src="../../assets/images/new_img/BNI.svg">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Bank BNI</h5>
+                            </div>
+                        </div>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <img src="../../assets/images/new_img/BCA.svg">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Bank BCA</h5>
+                            </div>
+                        </div>
+                        <div class="box-cos1 row mb-1">
+                            <div class="col-sm-1 col-md-1 ">
+                                <input type="radio">
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <i class="icon-credit-md-cl"></i>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h5 class="text-left">Credit Card</h5>
+                            </div>
+                        </div>
+                        <div class="item-center mt-2">
+                            <button class="btn btn-sm btn-green">Continue to Payment</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container container-row">
-            <div class="box-card1 mt-2 mb-4 bg-white mrl-4em">
-                <div class="box-header text-left">
-                    <h5 class="font-weight-bold ml-2">Daftar Invoice Anda</h5>
-                    <p class="font-12 text-muted1 ml-2">Feedback GM Terkait Permintaan Kontrak</p>
-                </div>
-                <div class="box-body text-left font-11" style="margin: 10px 3em;">
-                    <div class="box-notif mb-2">
-                        <p class="font-9 v-middle obj-middle text-notif">Invoice diterbitkan berdasaarkan lokasi pemesanan anda</h6>
-                    </div>
-                    <div class="box-card1 bg-gray4 mb-2" style="padding: 25px;">
-                        <div class="d-flex">
-                            <div style="width: 70px;">
-                                <img src="../assets/images/Gondorukem.png" class="w-100">
-                            </div>
-                            <div class="ml-1 w-100">
-                                <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                <div class="d-flex">
-                                    <div class="d-flex">
-                                        <i class="icon-location-cl-2"></i>
-                                        <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                            Banten</h6>
-                                    </div>
-                                    <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                        Detail</button>
-
-                                </div>
-                                <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                    <span>9182649162491826491</span>
-                                </h6>
-                                <div class="row mb-1">
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="d-flex">
-                                            <i class="icon-checkbox-cl"></i>
-                                            <h6 class="font-11 v-middle ml-1">Volume Permintaan</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h6 class="font-11 v-middle">: 500 Ton</h6>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="d-flex">
-                                            <i class="icon-credit-cl"></i>
-                                            <h6 class="font-11 v-middle ml-1">Total Tagihan</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h6 class="font-11 v-middle">: Rp. 800.000</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-card1 bg-gray4" style="padding: 25px;">
-                        <div class="d-flex">
-                            <div style="width: 70px;">
-                                <img src="../assets/images/Gondorukem.png" class="w-100">
-                            </div>
-                            <div class="ml-1 w-100">
-                                <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                <div class="d-flex">
-                                    <div class="d-flex">
-                                        <i class="icon-location-cl-2"></i>
-                                        <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                            Banten</h6>
-                                    </div>
-                                    <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                        Detail</button>
-
-                                </div>
-                                <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                    <span>9182649162491826491</span>
-                                </h6>
-                                <div class="row mb-1">
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="d-flex">
-                                            <i class="icon-checkbox-cl"></i>
-                                            <h6 class="font-11 v-middle ml-1">Volume Permintaan</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h6 class="font-11 v-middle">: 500 Ton</h6>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="d-flex">
-                                            <i class="icon-credit-cl"></i>
-                                            <h6 class="font-11 v-middle ml-1">Total Tagihan</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h6 class="font-11 v-middle">: Rp. 800.000</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    
-            </div>
-        </div>
     </div>
-    <!-- End Row -->
 
     <!-- Footer template -->
     <div class="container">
@@ -349,14 +311,14 @@
                 <div class="container">
                     <div class="row" style="margin:0px !important;">
                         <div class="col-sm-3 col-md-3 col-xs-12">
-                            <img src="../assets/images/logo-perhutani.png">
+                            <img src="../../assets/images/logo-perhutani.png">
                             <h6 class="text-main" style="margin-top: 5%;">Jl. TB Simatupang No.22, RT.1/RW.8, Jati
                                 Padang,
                                 Kec. Ps.
-                                Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12550</h6>
+                                Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540</h6>
                         </div>
                         <div class="col-sm-9 col-md-9 col-xs-12">
-                            <div class="col-sm-5 col-md-4 col-xs-6">
+                            <div class="col-sm-4 col-md-4 col-xs-6">
                                 <div class="footer-links">
                                     <h6 class="text-main-footer">Bantuan</h6>
                                     <div class="tabBlock" id="TabBlock-1">
@@ -411,26 +373,57 @@
             </div>
     </div>
     </footer>
+    </div>
     <div class="box-footer"></div>
     <a href="#" class="totop bg-dark"> </a>
 
+    <script>
+        $(document).ready(function () {
+            $("#datepicker_checkin_event").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkin_event').click(function () {
+                $("#datepicker_checkin_event").focus();
+            });
+
+            $("#datepicker_checkout_event").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-mm-yyyy"
+            }).datepicker('update', new Date());
+
+            $('#click_checkout_event').click(function () {
+                $("#datepicker_checkout_event").focus();
+            });
+        });
+    </script>
+    <!-- JS Plugin-->
+
     <!-- bootstrap js -->
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
 
     <!-- datepicker js -->
-    <script type="text/javascript" src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- datatable js-->
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/dataTables.bootstrap.min.js"></script>
 
     <!-- owl.carousel.min js -->
-    <script type="text/javascript" src="../assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/owl.carousel.min.js"></script>
 
     <!-- bxslider js -->
-    <script type="text/javascript" src="../assets/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.bxslider.js"></script>
 
     <!-- Slider Js -->
-    <script type="text/javascript" src="../assets/js/revolution-slider.js"></script>
+    <script type="text/javascript" src="../../assets/js/revolution-slider.js"></script>
 
     <!-- megamenu js -->
-    <script type="text/javascript" src="../assets/js/megamenu.js"></script>
+    <script type="text/javascript" src="../../assets/js/megamenu.js"></script>
     <script type="text/javascript">
         /* <![CDATA[ */
         var mega_menu = '0';
@@ -439,18 +432,17 @@
     </script>
 
     <!-- jquery.mobile-menu js -->
-    <script type="text/javascript" src="../assets/js/mobile-menu.js"></script>
+    <script type="text/javascript" src="../../assets/js/mobile-menu.js"></script>
 
     <!--jquery-ui.min js -->
-    <script type="text/javascript" src="../assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
 
     <!-- main js -->
-    <script type="text/javascript" src="../assets/js/main.js"></script>
-
-    <!-- <script type="text/javascript" src="../assets/js/history.js"></script> -->
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
 
     <!-- countdown js -->
-    <script type="text/javascript" src="../assets/js/countdown.js"></script>
+    <script type="text/javascript" src="../../assets/js/countdown.js"></script>
+
 </body>
 
 </html>

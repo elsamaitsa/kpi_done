@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <title>KUITANSI</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        font-weight: 500;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table tr td {
+        vertical-align: top;
+    }
+
+    .container {
+        margin: 10px 80px;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .container-table {
+        padding: 10px 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    table tr {
+        line-height: 40px;
+    }
+
+    .table-border {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table-border tr td {
+        border: 1px solid #000;
+        padding: 5px 6px;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-size: 22px;
+        text-decoration: underline;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .text-uppercase{
+        text-transform: uppercase;
+    }
+
+    .fs-9{
+        font-size: 9px;
+    }
+
+    .fs-12{
+        font-size: 12px;
+    }
+
+    .fs-13{
+        font-size: 13px;
+    }
+
+    .fs-14 {
+        font-size: 14px;
+    }
+
+    .cl-red{
+        color: #fa0505;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2px;
+        margin-bottom: 3px;
+        font-weight: 500;
+    }
+
+    .mt-1 {
+        margin-top: 5px;
+    }
+
+    .mt-2 {
+        margin-top: 10px;
+    }
+
+    .mt-3 {
+        margin-top: 15px;
+    }
+
+    #invoice {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="kuitansi">
+            <div style="display: flex;">
+                <img src="assets/images/logo-perhutani.png" style="width:10%; height:10%;">
+            </div>
+            <hr>
+            <h4 class="text-center title">kuitansi</h4>
+            <h6 style="text-align: right;" class="text-uppercase">
+                no invoice : <span class="fs-12 cl-red">103030030330</span>
+            </h6>
+            <h6 class="fs-14">GM 2-PROBOLINGGO</h6>
+            <table class="fs-14 mt-2">
+                <tr>
+                    <td width="30%">Sudah Terima Dari
+                        <p style="margin-top: -19px; font-size: 9px">Recived from</p></td>
+                    <td>:</td>
+                    <td><h6 class="fs-14">TISNA CINTA NILAMI</h6>
+                        Sumbermulyo rt.038 rw.006 Tegaldlimo Banyuwangi</td>
+                </tr>
+                <tr>
+                    <td>Banyak nya uang
+                        <p style="margin-top: -19px; font-size: 9px">Amount of</p></td>
+                    <td>:</td>
+                    <td style="border: 1px solid #000; padding-left: 5px; font-weight: 600;">empatbelas juta enam ratus enam puluh enam ribu lima ratus tujuh puluh
+                        lima rupiah</td>
+                </tr>
+                <tr>
+                    <td>Untuk Pembayaran
+                        <p style="margin-top: -19px; font-size: 9px">Payment for</p></td>
+                    <td>:</td>
+                    <td>
+                        <table style="border:0px; font-size: 12px;">
+                            <tr>
+                                <td>Jenis Kayu</td>
+                                <td>Jumlah Volume</td>
+                                <td>Jumlah Batang</td>
+                            </tr>
+                            <tr>
+                                <td>Rotan</td>
+                                <td>20 m3</td>
+                                <td>100</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right; padding-right: 15px;">Jumlah</td>
+                    <td>Rp</td>
+                    <td style="font-weight: 600; font-size: 16px; border: 1px solid #000;">14.666.575,00</td>
+                </tr>
+            </table>
+
+            <div style="display: flex; margin-top: 30px;">
+            <div style="text-align: center; margin-left: auto;">
+                <h6 class="text-uppercase fs-14">PROBOLINGGO</h6>
+                <p class="fs-12">07 Oktober 2020</p>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+<!-- <script>
+    function generatePDF() {
+        var element = document.getElementById("kuitansi");
+        element.style.display = "block";
+
+        // html2pdf()
+        // .from(element)
+        // .save('Invoice.pdf');
+        html2pdf().from(element).set({
+            margin: [10, 10, 0, 10],
+            filename: 'PI.pdf',
+        }).save();
+
+    }
+
+    window.onload = generatePDF;
+    // window.history.back();
+</script> -->
+
+
+</html>

@@ -18,36 +18,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon  -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo-perhutani.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo-perhutani.png">
 
     <!-- CSS Style -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
 
     <!-- font-awesome & simple line icons CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../assets/css/simple-line-icons.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/simple-line-icons.css" media="all">
 
     <!-- Datepicker CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datepicker3.css">
 
     <!-- owl.carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/owl.transitions.css">
 
     <!-- animate CSS  -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css" media="all">
 
     <!-- flexslider CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/flexslider.css">
 
     <!-- jquery-ui.min CSS  -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
 
     <!-- Revolution Slider CSS -->
-    <link href="../assets/css/revolution-slider.css" rel="stylesheet">
+    <link href="../../assets/css/revolution-slider.css" rel="stylesheet">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,13 +55,13 @@
         rel="stylesheet">
 
     <!-- style CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../assets/css/apps.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/apps.css" media="all">
 
     <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
 
     <!-- jquery js -->
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
 
 
@@ -241,220 +241,91 @@
                 <form id="msform">
                     <ul id="progressbar_kontrak" class="mb-3">
                         <li class="active">Pengajuan Kontrak GTD</li>
-                        <li class="active">Penawaran Kontrak GTD</li>
+                        <li>Penawaran Kontrak GTD</li>
                         <li>Kontrak GTD Aktif</li>
                     </ul>
-                    <fieldset class="mrl-4em">
+                    <fieldset>
                         <div class="text-left font-11" style="padding:1em 0">
                             <div class="box-header text-left">
-                                <h5 class="font-weight-bold">Penawaran Harga Kontrak GTD</h5>
-                                <p class="font-10 text-muted1">Feedback GM Terkait Permintaan Kontrak</p>
+                                <h5 class="font-weight-bold">Pengajuan Kontrak GTD</h5>
+                                <p class="font-10 text-muted1">Permohonan GTD untuk Kontrak</p>
 
                             </div>
                             <div class="box-body text-left font-11">
-                                <div class="box-card1 bg-gray4" style="padding: 25px;">
-                                    <div class="d-flex">
-                                        <div style="width: 70px;">
-                                            <img src="../assets/images/Gondorukem.png" class="img-item">
+                                <div class="mt-2">
+                                    <label>Jenis Produk</label>
+                                    <select class="input-custom form-control font-11" id="payment">
+                                        <option>Pilih Jenis Produk</option>
+                                    </select>
+                                </div>
+                                <div class="mt-2">
+                                    <label class="text-muted">Mutu</label>
+                                    <div class="d-flex j-space-between">
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">WG</span>
                                         </div>
-                                        <div class="ml-1 w-100">
-                                            <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                            <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <i class="icon-location-cl-2"></i>
-                                                    <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                                        Banten</h6>
-                                                </div>
-                                                <div class="d-flex ml-2">
-                                                    <i class="ico-time-orange"></i>
-                                                    <h6 class="font-11 text-orange v-middle">Belum Diproses</h6>
-                                                </div>
-                                                <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                                    Invoice</button>
-
-                                            </div>
-                                            <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                                <span>9182649162491826491</span>
-                                            </h6>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">WW</span>
                                         </div>
-                                    </div>
-                                    <div class="radius-table border-table mt-2">
-                                        <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="w-30">Lokasi Angkut</th>
-                                                    <th>Mutu</th>
-                                                    <th>Volume</th>
-                                                    <th class="w-20">Mulai</th>
-                                                    <th class="w-20">Berakhir</th>
-                                                    <!-- <th>Action</th> -->
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">PGT Sukun</td>
-                                                    <td class="text-center">X</td>
-                                                    <td class="text-right text-muted1">Rp 232.0239.000</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">X</span>
+                                        </div>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">XB</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-card1 bg-gray4" style="padding: 25px;">
-                                    <div class="d-flex">
-                                        <div style="width: 70px;">
-                                            <img src="../assets/images/Gondorukem.png" class="img-item">
-                                        </div>
-                                        <div class="ml-1 w-100">
-                                            <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                            <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <i class="icon-location-cl-2"></i>
-                                                    <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                                        Banten</h6>
-                                                </div>
-                                                <div class="d-flex ml-2">
-                                                    <i class="ico-time-green"></i>
-                                                    <h6 class="font-11 text-main v-middle">Diproses</h6>
-                                                </div>
-                                                <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                                    Invoice</button>
+                                <div class="mt-2">
+                                    <label>Volume / ton</label>
+                                    <input type="text" class="input-custom form-control font-11" name=""
+                                        placeholder="Isi Volume">
+                                </div>
+                                <div class="mt-2">
+                                    <label>Wilayah</label>
+                                    <select class="input-custom form-control font-11 mb-2" id="location">
+                                        <option>Central Java</option>
+                                    </select>
+                                </div>
 
-                                            </div>
-                                            <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                                <span>9182649162491826491</span>
-                                            </h6>
+                                <div class="mt-2">
+                                    <label class="text-muted">Lokasi Angkut</label>
+                                    <div class="d-flex j-space-between">
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">KBM IHH
+                                                Tandes</span>
                                         </div>
-                                    </div>
-                                    <div class="radius-table border-table mt-2">
-                                        <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="w-30">Lokasi Angkut</th>
-                                                    <th>Mutu</th>
-                                                    <th>Volume</th>
-                                                    <th class="w-20">Mulai</th>
-                                                    <th class="w-20">Berakhir</th>
-                                                    <!-- <th>Action</th> -->
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">PGT Sukun</td>
-                                                    <td class="text-center">X</td>
-                                                    <td class="text-right text-muted1">Rp 232.0239.000</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">PGT
+                                                Sukun</span>
+                                        </div>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">PGT
+                                                Garahan</span>
+                                        </div>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">PGT
+                                                Rejawinangun</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-card1 bg-gray4" style="padding: 25px;">
-                                    <div class="d-flex">
-                                        <div style="width: 70px;">
-                                            <img src="../assets/images/Gondorukem.png" class="img-item">
-                                        </div>
-                                        <div class="ml-1 w-100">
-                                            <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                            <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <i class="icon-location-cl-2"></i>
-                                                    <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                                        Banten</h6>
-                                                </div>
-                                                <div class="d-flex ml-2">
-                                                    <i class="ico-time-green"></i>
-                                                    <h6 class="font-11 text-main v-middle">Diproses</h6>
-                                                </div>
-                                                <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                                    Invoice</button>
 
-                                            </div>
-                                            <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                                <span>9182649162491826491</span>
-                                            </h6>
+                                <div class="mt-2">
+                                    <label class="text-muted">Periode Kontrak</label>
+                                    <div class="d-flex j-space-between">
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">2 Bulan (19
+                                                Agust 2021 - 30 Sep 2021) </span>
                                         </div>
-                                    </div>
-                                    <div class="radius-table border-table mt-2">
-                                        <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="w-30">Lokasi Angkut</th>
-                                                    <th>Mutu</th>
-                                                    <th>Volume</th>
-                                                    <th class="w-20">Mulai</th>
-                                                    <th class="w-20">Berakhir</th>
-                                                    <!-- <th>Action</th> -->
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">PGT Sukun</td>
-                                                    <td class="text-center">X</td>
-                                                    <td class="text-right text-muted1">Rp 232.0239.000</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
+                                        <div class="mr-1">
+                                            <input type="checkbox" class="checkbox-sm"><span class="ml-1">6 Bulan (19
+                                                Agust 2021 - 31 Des 2021)</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-card1 bg-gray4" style="padding: 25px;">
-                                    <div class="d-flex">
-                                        <div style="width: 70px;">
-                                            <img src="../assets/images/Gondorukem.png" class="img-item">
-                                        </div>
-                                        <div class="ml-1 w-100">
-                                            <h5 class="font-weight-bold mb-0">Gondorukem</h5>
-                                            <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <i class="icon-location-cl-2"></i>
-                                                    <h6 class="font-11 text-muted v-middle">Kantor GM III Jawa Barat &
-                                                        Banten</h6>
-                                                </div>
-                                                <div class="d-flex ml-2">
-                                                    <i class="ico-time-green"></i>
-                                                    <h6 class="font-11 text-main v-middle">Diproses</h6>
-                                                </div>
-                                                <button class="btn btn-sm btn-circle-green ml-auto">Lihat
-                                                    Invoice</button>
 
-                                            </div>
-                                            <h6 class="font-10 text-muted1 ml-1">Nomor Kontrak :
-                                                <span>9182649162491826491</span>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="radius-table border-table mt-2">
-                                        <table class="table-kontrak" width="100%" cellpadding="0" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="w-30">Lokasi Angkut</th>
-                                                    <th>Mutu</th>
-                                                    <th>Volume</th>
-                                                    <th class="w-20">Mulai</th>
-                                                    <th class="w-20">Berakhir</th>
-                                                    <!-- <th>Action</th> -->
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">PGT Sukun</td>
-                                                    <td class="text-center">X</td>
-                                                    <td class="text-right text-muted1">Rp 232.0239.000</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                    <td class="text-center text-muted1">Non Retail</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <div class="item-center mt-2">
+                                    <button type="button" class="btn btn-green" style="font-size: 15px;"
+                                        id="btnSubmit">Kirim Permintaan</button>
                                 </div>
                                 <!-- <input type="button" name="next" class="next action-button" value="Next" /> -->
                             </div>
@@ -475,7 +346,7 @@
                 <div class="container">
                     <div class="row" style="margin:0px !important;">
                         <div class="col-sm-3 col-md-3 col-xs-12">
-                            <img src="../assets/images/logo-perhutani.png">
+                            <img src="../../assets/images/logo-perhutani.png">
                             <h6 class="text-main" style="margin-top: 5%;">Jl. TB Simatupang No.22, RT.1/RW.8, Jati
                                 Padang,
                                 Kec. Ps.
@@ -541,22 +412,22 @@
     <a href="#" class="totop bg-dark"> </a>
 
     <!-- bootstrap js -->
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
 
     <!-- datepicker js -->
-    <script type="text/javascript" src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap-datepicker.min.js"></script>
 
     <!-- owl.carousel.min js -->
-    <script type="text/javascript" src="../assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/owl.carousel.min.js"></script>
 
     <!-- bxslider js -->
-    <script type="text/javascript" src="../assets/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.bxslider.js"></script>
 
     <!-- Slider Js -->
-    <script type="text/javascript" src="../assets/js/revolution-slider.js"></script>
+    <script type="text/javascript" src="../../assets/js/revolution-slider.js"></script>
 
     <!-- megamenu js -->
-    <script type="text/javascript" src="../assets/js/megamenu.js"></script>
+    <script type="text/javascript" src="../../assets/js/megamenu.js"></script>
     <script type="text/javascript">
         /* <![CDATA[ */
         var mega_menu = '0';
@@ -565,18 +436,18 @@
     </script>
 
     <!-- jquery.mobile-menu js -->
-    <script type="text/javascript" src="../assets/js/mobile-menu.js"></script>
+    <script type="text/javascript" src="../../assets/js/mobile-menu.js"></script>
 
     <!--jquery-ui.min js -->
-    <script type="text/javascript" src="../assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
 
     <!-- main js -->
-    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
 
-    <!-- <script type="text/javascript" src="../assets/js/history.js"></script> -->
+    <!-- <script type="text/javascript" src="../../assets/js/history.js"></script> -->
 
     <!-- countdown js -->
-    <script type="text/javascript" src="../assets/js/countdown.js"></script>
+    <script type="text/javascript" src="../../assets/js/countdown.js"></script>
 </body>
 
 </html>
